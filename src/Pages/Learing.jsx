@@ -3,6 +3,7 @@ import teaching from '../Media/teaching.png'
 import Ecma from '../Media/Ecma.png'
 import console from '../Media/consoletable.png'
 import Higher from '../Media/Higher.png'
+import Foother from '../Components/Foother'
 export default function Learing() {
  const content = [{
   title: 'ES16 Features', 
@@ -52,11 +53,69 @@ export default function Learing() {
          <p className='text-xs text-gray-600 font my-1'>{item.date}</p>
          <h1 className='text-lg font-semibold'>{item.title}</h1>
          <p className='text-sm text-gray-600 font'>{item.description}</p>
-          <button className='font bg-gray-400 text-white m-3 p-3 rounded-md'><a href={item.link}>Read More</a></button>
+          <button className='font bg-gray-400 text-white m-3 p-3 rounded-md font-semibold'><a href={item.link}>Read More</a></button>
          </div>
       </div>
      ))}
   </div>
+    <div className='flex justify-center items-center'>
+  <button className='font bg-gray-400 text-white m-3 p-3 rounded-md hover:bg-gray-500 transition duration-300 '><a>Explore More</a></button>
+    </div>
+   
+
+   <div className='bg-gray-900 text-white font py-10'>
+    <h1 className='text-center font-semibold uppercase text-xl text-gray-300'>Experts Speak</h1>
+    <h1 className='text-center uppercase text-2xl font-bold'>Leadership and Developer Feedback</h1>
+    <div className=' grid md:grid-cols-2 md:mx-24 my-4'>
+
+      <div className='bg-white text-black p-4 my-4 mx-3'>
+        <div className='flex items-center space-x-3'>
+        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+       <div>
+       <h1 className=' font-semibold'>Name Here</h1>
+        <p className='text-sm text-gray-400'>Position Here</p>
+       </div>
+        </div>
+        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+      </div>
+
+
+      <div className='bg-white text-black p-4 my-4 mx-3'>
+        <div className='flex items-center space-x-3'>
+        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+       <div>
+       <h1 className=' font-semibold'>Name Here</h1>
+        <p className='text-gray-400 text-sm'>Position Here</p>
+       </div>
+        </div>
+        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+      </div>
+
+
+      <div className='bg-white text-black p-4 mx-3 my-3'>
+        <div className='flex items-center space-x-3'>
+        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+       <div>
+       <h1 className=' font-semibold'>Name Here</h1>
+        <p className='text-sm text-gray-400'>Position Here</p>
+       </div>
+        </div>
+        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+      </div>
+
+      <div className='bg-white text-black p-4 mx-3 my-3'>
+        <div className='flex items-center space-x-3'>
+        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+       <div>
+       <h1 className=' font-semibold'>Name Here</h1>
+        <p className='text-sm text-gray-400'>Position Here</p>
+       </div>
+        </div>
+        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+      </div>
+    </div>
+   </div>
+   <Foother/>
     </>
   )
 }

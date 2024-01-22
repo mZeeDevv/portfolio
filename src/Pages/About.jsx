@@ -6,6 +6,7 @@ import microsoft from '../Media/Microsoft.png'
 import devconnect from '../Media/Devconnect.jpg'
 import dopeDevs from '../Media/dopedevs.png'
 import Learing from './Learing'
+import Foother from '../Components/Foother'
 
 export default function About() {
   document.title = "mZeeDev | Home"

@@ -10,3 +10,18 @@
 .font2 {
     font-family: "Grape Nuts", cursive;
 }
+.fontDes {
+    font-family: "Poppins", sans-serif;
+
+}
+.fontPara {
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+}
+@media (max-width: 768px) {
+    .fontPara {
+        font-weight: 400;
+    }
+    
+}

@@ -12,7 +12,6 @@ export default function Header() {
       <li className='font md:text-xl hover:scale-110 transition-all duration-500 hover:underline text-gray-700 cursor-pointer' onClick={() => Navigator("/blog")}>Blog</li>
       <li className='font md:text-xl hover:scale-110 transition-all duration-500 hover:underline text-gray-700 cursor-pointer' onClick={() => Navigator("/projects")}>Projects</li>
       <li className='font md:text-xl hover:scale-110 transition-all duration-500 hover:underline text-gray-700 cursor-pointer' onClick={() => Navigator("/events")}>Events</li>
-      <li className='font md:text-xl hover:scale-110 transition-all duration-500 hover:underline text-gray-700 cursor-pointer' onClick={() => Navigator("/learning")}>Learning</li>
       <li className='font md:text-xl hover:scale-110 transition-all duration-500 hover:underline text-gray-700 cursor-pointer' onClick={() => Navigator("/contact")}>Contact</li>
     </ul>
     </div>

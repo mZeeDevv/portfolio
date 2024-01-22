@@ -1,6 +1,11 @@
 import React from 'react'
 import profile from '../Media/profile.png'
 import bg from '../Media/blue.png'
+import google from '../Media/google.png'
+import microsoft from '../Media/Microsoft.png'
+import devconnect from '../Media/Devconnect.jpg'
+import dopeDevs from '../Media/dopedevs.png'
+import Learing from './Learing'
 
 export default function About() {
   document.title = "mZeeDev | Home"
@@ -31,6 +36,21 @@ export default function About() {
       <p className='fontDes text-sm md:text-[15px]'>👉 Read  <span className='fontPara cursor-pointer'>How I started my Technical journey from a game</span></p>
      </div>
  </div>
+
+   <div className=' border-t border-b border-gray-400 my-7 py-3'>
+    <h1 className='text-center md:text-3xl font py-3 text-xl font-semibold'>Communities I'm Part Of</h1>
+    <div className='grid md:grid-cols-3 md:max-w-6xl mx-auto grid-cols-2 lg:grid-cols-4'>
+     <div className='bg-center bg-cover md:w-[100px] md:h-[100px]  w-[70px] h-[70px] m-3' style={{backgroundImage: `url(${google})`}}></div>
+     <div className='bg-center bg-cover md:w-[100px] md:h-[100px] w-[70px] h-[70px] m-3' style={{backgroundImage: `url(${microsoft})`}}></div>
+     <div className='bg-center bg-cover md:w-[100px] md:h-[100px]  w-[70px] h-[70px] m-3' style={{backgroundImage: `url(${dopeDevs})`}}></div>
+     <div className='bg-center bg-cover md:w-[100px] md:h-[100px]  w-[70px] h-[70px] m-3 rounded-sm' style={{backgroundImage: `url(${devconnect})`}}></div>
+    </div>
+   </div>
+   
+   <div>
+    <Learing/>
+   </div>
+
  </>    
   )
 }

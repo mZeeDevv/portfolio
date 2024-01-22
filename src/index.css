@@ -19,9 +19,29 @@
     color: black;
     font-weight: 600;
 }
+@keyframes undefined {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(4px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.float_sm {
+    animation: undefined 2s infinite;
+    animation-delay: .5s;
+}
 @media (max-width: 768px) {
     .fontPara {
         font-weight: 400;
     }
     
+}
+.hello {
+     aspect-ratio: 4/2;
+     mix-blend-mode: color-burn;
+     object-fit: contain;
 }

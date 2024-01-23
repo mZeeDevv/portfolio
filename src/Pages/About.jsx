@@ -12,10 +12,10 @@ export default function About() {
   return (
  <>
  <div className='flex flex-col md:flex-row max-w-6xl mx-auto md:my-16 my-3 md:space-x-7'>
-     <div className='relative md:h-[400px] md:w-[400px] flex justify-center'>
-     <div className=' md:top-3 absolute md:left-2 w-[300px] -z-10 h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] right-0 top-2 rounded-lg'
+     <div className='relative md:h-[400px] md:w-[400px] flex justify-center '>
+     <div className=' md:top-3 absolute md:left-2 w-[300px] -z-10 h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] rounded-lg top-1 right-12'
        style={{ backgroundImage: `url(${bg})`}}></div>
-       <div className='w-[300px] h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] rounded-md hover:scale-105 transition-all duration-500'
+       <div className='w-[300px] h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] rounded-md hover:scale-105 transition-all duration-500 '
        style={{ backgroundImage: `url(${profile})`}}></div>
      </div>
 

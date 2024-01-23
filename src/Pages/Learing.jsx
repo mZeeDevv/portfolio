@@ -26,6 +26,13 @@ export default function Learing() {
   date: "11 Jan 2024",
   link: "https://www.instagram.com/p/C1942t-tydN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
+  {
+    title: 'Firebase in JavaScript', 
+  description: 'If you want to create a table-like structure in the console using plain JavaScript, you can use a combination of console.log statements to print rows and columns. This can be achieve with two diff....',
+  image: console,
+  date: "11 Jan 2024",
+  link: "https://www.instagram.com/p/C1942t-tydN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
 ]
   return (
     <>
@@ -45,21 +52,38 @@ export default function Learing() {
      </div>
 
 
-  <div className='grid md:grid-cols-2 md:space-x-8 lg:grid-cols-3 lg:space-x-3 lg:mx-24'>
+  {/* <div className='grid md:grid-cols-2 lg:grid-cols-3 mx-3 gap-12'>
   {content.map((item, key) => (
-      <div className='md:w-[400px] md:h-[520px] h-[550px] md:my-10 my-4 shadow-md rounded-md hover:scale-110 transition duration-500'>
+      <div className='md:w-[350px] md:h-[520px] h-[550px] md:my-10 my-4 shadow-md rounded-md hover:scale-110 transition duration-500'>
           <div className='bg-center bg-cover w-full h-[55%] rounded-md' style={{backgroundImage: `url(${item.image})`}}></div>
          <div className='p-3'>
          <p className='text-xs text-gray-600 font my-1'>{item.date}</p>
          <h1 className='text-lg font-semibold'>{item.title}</h1>
          <p className='text-sm text-gray-600 font'>{item.description}</p>
-          <button className='font bg-gray-400 text-white m-3 p-3 rounded-md font-semibold'><a href={item.link}>Read More</a></button>
+          <button className='font bg-gray-900 text-white m-3 p-3 rounded-md font-semibold'><a href={item.link}>Read More</a></button>
          </div>
       </div>
      ))}
+  </div> */}
+
+  <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-12 md:mx-16  gap-6 md:max-w-5xl mx-auto'>
+  {content.map((item, key) => (
+      <div className='shadow-md'>
+      <img src={item.image} alt={`content{${key}}`} className='w-full rounded-md h-[420px]'/>
+      <div className='px-3 my-3'>
+         <p className='text-xs text-gray-600 font my-1'>{item.date}</p>
+         <h1 className='text-lg font-semibold'>{item.title}</h1>
+         <p className='text-sm text-gray-600 font'>{item.description}</p>
+          <button className='font bg-gray-900 text-white p-2 m-2 rounded-md font-semibold'><a href={item.link}>Read More</a></button>
+         </div>
   </div>
+     ))}
+  </div>
+
+
+
     <div className='flex justify-center items-center'>
-  <button className='font bg-gray-400 text-white m-3 p-3 rounded-md hover:bg-gray-500 transition duration-300 '><a>Explore More</a></button>
+  <button className='font bg-gray-900 text-white m-3 p-3 rounded-md hover:bg-gray-500 transition duration-300 '><a>Explore More</a></button>
     </div>
    
 

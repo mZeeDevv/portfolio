@@ -6,7 +6,6 @@ import microsoft from '../Media/microsoft.png'
 import devconnect from '../Media/Devconnect.jpg'
 import dopeDevs from '../Media/dopedevs.png'
 import Learing from './Learing'
-import Foother from '../Components/Foother'
 
 export default function About() {
   document.title = "mZeeDev | Home"
@@ -14,7 +13,7 @@ export default function About() {
  <>
  <div className='flex flex-col md:flex-row max-w-6xl mx-auto md:my-16 my-3 md:space-x-7'>
      <div className='relative md:h-[400px] md:w-[400px] flex justify-center'>
-     <div className=' md:top-3 absolute md:left-2 w-[300px] -z-10 h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] left-4 top-1 rounded-lg'
+     <div className=' md:top-3 absolute md:left-2 w-[300px] -z-10 h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] right-0 top-2 rounded-lg'
        style={{ backgroundImage: `url(${bg})`}}></div>
        <div className='w-[300px] h-[300px] border border-gray-300 bg-center bg-cover md:w-[400px] md:h-[400px] rounded-md hover:scale-105 transition-all duration-500'
        style={{ backgroundImage: `url(${profile})`}}></div>
@@ -47,7 +46,6 @@ export default function About() {
      <div className='bg-center bg-cover md:w-[100px] md:h-[100px]  w-[70px] h-[70px] m-3 rounded-sm' style={{backgroundImage: `url(${devconnect})`}}></div>
     </div>
    </div>
-   
    <div>
     <Learing/>
    </div>

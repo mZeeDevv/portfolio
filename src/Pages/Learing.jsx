@@ -4,6 +4,7 @@ import Ecma from '../Media/Ecma.png'
 import console from '../Media/consoletable.png'
 import Higher from '../Media/Higher.png'
 import Foother from '../Components/Foother'
+import Firebase from '../Media/Firebase.png'
 export default function Learing() {
  const content = [{
   title: 'ES16 Features', 
@@ -28,10 +29,10 @@ export default function Learing() {
   },
   {
     title: 'Firebase in JavaScript', 
-  description: 'If you want to create a table-like structure in the console using plain JavaScript, you can use a combination of console.log statements to print rows and columns. This can be achieve with two diff....',
-  image: console,
-  date: "11 Jan 2024",
-  link: "https://www.instagram.com/p/C1942t-tydN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  description: 'To add Firebase to your JavaScript project, you wll need to follow these general steps. Firebase provides a set of services such as Realtime Database, Authentication, Cloud Firestore, Cloud Functions, Hosting, etc. The specific services you need wil....',
+  image: Firebase,
+  date: "5 Jan 2024",
+  link: "https://www.instagram.com/p/C1uOLCetOu6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
 ]
   return (
@@ -39,7 +40,7 @@ export default function Learing() {
      <div>
       <h1 className='text-center text-gray-400 fontDes uppercase font-semibold text-md md:text-xl'>From Learning</h1>
       <h1 className='text-center uppercase font-bold md:text-2xl text-xl'>TO teaching and Guiding</h1>
-      <div className='flex md:flex-row mx-1 justify-between my-10 md:mx-28 flex-col'>
+      <div className='flex md:flex-row mx-1 justify-between my-10 lg:mx-28 flex-col md:mx-3'>
        
         <div className=' flex flex-col md:w-[50%]'>
           <h1 className='text-2xl font font-semibold'>Simple Content</h1>
@@ -51,24 +52,9 @@ export default function Learing() {
       </div>
      </div>
 
-
-  {/* <div className='grid md:grid-cols-2 lg:grid-cols-3 mx-3 gap-12'>
+  <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-6  gap-6 md:max-w-7xl md:mx-auto mx-3'>
   {content.map((item, key) => (
-      <div className='md:w-[350px] md:h-[520px] h-[550px] md:my-10 my-4 shadow-md rounded-md hover:scale-110 transition duration-500'>
-          <div className='bg-center bg-cover w-full h-[55%] rounded-md' style={{backgroundImage: `url(${item.image})`}}></div>
-         <div className='p-3'>
-         <p className='text-xs text-gray-600 font my-1'>{item.date}</p>
-         <h1 className='text-lg font-semibold'>{item.title}</h1>
-         <p className='text-sm text-gray-600 font'>{item.description}</p>
-          <button className='font bg-gray-900 text-white m-3 p-3 rounded-md font-semibold'><a href={item.link}>Read More</a></button>
-         </div>
-      </div>
-     ))}
-  </div> */}
-
-  <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-12 md:mx-16  gap-6 md:max-w-5xl mx-auto'>
-  {content.map((item, key) => (
-      <div className='shadow-md'>
+      <div className='shadow-md rounded-md'>
       <img src={item.image} alt={`content{${key}}`} className='w-full rounded-md h-[420px]'/>
       <div className='px-3 my-3'>
          <p className='text-xs text-gray-600 font my-1'>{item.date}</p>
@@ -83,7 +69,7 @@ export default function Learing() {
 
 
     <div className='flex justify-center items-center'>
-  <button className='font bg-gray-900 text-white m-3 p-3 rounded-md hover:bg-gray-500 transition duration-300 '><a>Explore More</a></button>
+  <button className='font bg-gray-900 text-white m-3 p-3 rounded-md hover:bg-gray-500 transition duration-300 '><a href='https://www.instagram.com/mzeedev/'>Explore More</a></button>
     </div>
    
 

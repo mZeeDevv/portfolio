@@ -1,22 +1,51 @@
 import React from 'react'
 import firebase from '../Media/bfirebase.png'
 import history from '../Media/bhistory.png'
+import functions from '../Media/bfunctions.png'
+import Footer from '../Components/Foother'
+import rules from '../Media/brulesd.png'
+import domc from '../Media/bdom.png'
 
 export default function Blog() {
   document.title = "mZeeDev | Blog Articles"
   const blogs = [
   {
-    title: "Adding Firebase to JavaScript Project",
+    title: "From a Gamer to Full Stack Developer",
     picture: history,
    des: "Read how a full time gamer become Full Stack Developer. What was the motivation behind it and how he achieved it.",
    link: "",
    read: "6 Minutes",
    Date: "2 November 2023"
-  }
+  },
+  {
+    title: "Firebase Functions",
+    picture: functions,
+   des: "Ever listen about Firebase Functions? If not then read this article to know about Firebase Functions and how to use them.",
+   link: "",
+   read: "5 Minutes",
+   Date: "12 November 2023"
+  },
+  {
+    title: "Firebase Realtime Database Rules",
+    picture: rules,
+   des: "Firebase Realtime Database Rules are very important to secure your database. Read this article to know more about Firebase Realtime Database Rules.",
+   link: "",
+   read: "3 Minutes",
+   Date: "20 January 2024"
+  },
+  {
+    title: "JavaScript DOM Manipulation",
+    picture: domc,
+   des: "JavaScript DOM Manipulation is very important to make your website dynamic. Read this article to know more about JavaScript DOM Manipulation.",
+   link: "",
+   read: "6 Minutes",
+   Date: "12 January 2024"
+  },
+
   ]
   return (
     <>
-    <div className='md:mx-16 flex flex-col my-3 mx-1'>
+    <div className='md:mx-16 flex flex-col my-3 mx-3'>
     <h1 className=' text-gray-400 fontDes uppercase font-semibold text-md md:text-xl'>Insights & Perspectives 💡</h1>
     <h1 className='uppercase font-bold md:text-2xl text-xl'>Blog Articles</h1>
     <div className='flex items-center md:space-x-4 shadow-xl rounded-md flex-col md:flex-row'>
@@ -32,12 +61,11 @@ export default function Blog() {
        </div>
     </div>
    
-    <div className='grid md-grid-cols-2 bg-red-200'>
+    <div className='grid md:grid-cols-2 my-5 mx-3 md:gap-4 lg:grid-cols-3 gap-3'>
       {blogs.map((blog) => (
-        <div>
-      <div className='flex items-center md:space-x-4 shadow-xl rounded-md flex-col'>
-      <img src={blog.picture} alt="blog_firebase" className='md:h-[45%] md:w-[45%] rounded-md h-[30%] w-full'/>
-       <div className='w-full'>
+      <div className='flex shadow-xl rounded-md flex-col'>
+      <img src={blog.picture} alt="blog_" className='rounded-md h-[55%] w-full'/>
+       <div className='w-full p-2'>
        <div className='flex justify-between fontDes text-gray-500 my-2'>
         <p>{blog.Date}</p>
         <p className='mr-2'>{blog.read}</p>
@@ -47,14 +75,10 @@ export default function Blog() {
       <button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3'><a>Read More</a></button>
        </div>
     </div>
-        </div>
       ))}
     </div>
-  
-
-
-
     </div>
+    <Footer/>
     </>
   )
 }

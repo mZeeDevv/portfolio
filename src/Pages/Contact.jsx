@@ -17,7 +17,7 @@ console.log(message)
         <div>
         <p className='max-w-5xl mx-auto'>Fill out the form below or shoot me an email.</p>
         <div className='max-w-5xl mx-auto md:px-10 md:py-10 py-3 px-3 shadow-md bg-white'>
-        <form  name="contact" method="POST" data-netlify="true" action='/events'>
+        <form  name="contact" method="POST" data-netlify="true" action='/https://magnificent-strudel-ea79b8.netlify.app/events'>
           <input type="hidden" name="form-name" value="contact" />
           <div className='flex space-x-2' >
             <div className='md:w-[50%]'>

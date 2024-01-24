@@ -6,6 +6,12 @@ import Blog from './Pages/Blog'
 import Events from './Pages/Events'
 import Learning from './Pages/Learing'
 import Projects from './Pages/Projects';
+import Dom from './Blogs/Dom'
+import FirebaseRiles from './Blogs/FirebaseRules'
+import BFxJ from './Blogs/FirebasexJava'
+import BFun from './Blogs/FirebaseFun'
+import Gamer from './Blogs/Gamer'
+
 
 import './App.css'
 function App() {
@@ -19,7 +25,13 @@ function App() {
       <Route path='/events' element={<Events/>} />
       <Route path='/projects' element={<Projects/>}/>
       <Route path='/learning' element={<Learning/>}/>
+      <Route path='/learning' element={<Learning/>}/>
       <Route path='/blog' element={<Blog/>}/>
+      <Route path='/blog/firebase-realtime-database-rules' element={<FirebaseRiles/>}/>
+      <Route path='/blog/firebase-functions' element={<BFun/>}/>
+      <Route path='/blog/FirebaseInJavaScript-full' element={<BFxJ/>}/>
+      <Route path='/blog/from-a-gamer-to-full-stack-developer' element={<Gamer/>}/>
+
     </Routes>
    </Router>
    </>

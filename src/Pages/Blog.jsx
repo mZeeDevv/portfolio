@@ -5,15 +5,17 @@ import functions from '../Media/bfunctions.png'
 import Footer from '../Components/Foother'
 import rules from '../Media/brulesd.png'
 import domc from '../Media/bdom.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function Blog() {
   document.title = "mZeeDev | Blog Articles"
+  const navi = useNavigate();
   const blogs = [
   {
     title: "From a Gamer to Full Stack Developer",
     picture: history,
    des: "Read how a full time gamer become Full Stack Developer. What was the motivation behind it and how he achieved it.",
-   link: "",
+   link: "/blog/from-a-gamer-to-full-stack-developer",
    read: "6 Minutes",
    Date: "2 November 2023"
   },
@@ -21,7 +23,7 @@ export default function Blog() {
     title: "Firebase Functions",
     picture: functions,
    des: "Ever listen about Firebase Functions? If not then read this article to know about Firebase Functions and how to use them.",
-   link: "",
+   link: "/blog/firebase-functions",
    read: "5 Minutes",
    Date: "12 November 2023"
   },
@@ -29,7 +31,7 @@ export default function Blog() {
     title: "Firebase Realtime Database Rules",
     picture: rules,
    des: "Firebase Realtime Database Rules are very important to secure your database. Read this article to know more about Firebase Realtime Database Rules.",
-   link: "",
+   link: "/blog/firebase-realtime-database-rules",
    read: "3 Minutes",
    Date: "20 January 2024"
   },
@@ -37,7 +39,7 @@ export default function Blog() {
     title: "JavaScript DOM Manipulation",
     picture: domc,
    des: "JavaScript DOM Manipulation is very important to make your website dynamic. Read this article to know more about JavaScript DOM Manipulation.",
-   link: "",
+   link: "/blog/javascript-dom-manipulation",
    read: "6 Minutes",
    Date: "12 January 2024"
   },
@@ -57,7 +59,7 @@ export default function Blog() {
       </div>
       <h1 className='md:text-2xl text-xl my-4 font-bold'>Adding Firebase to JavaScript Project</h1>
       <p className='fontDes text-gray-600 font-xs'>The complete guide of how to add Firebase to your JavaScript project. Firebase can be very useful while working on a full-stack project.</p>
-      <button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3'><a>Read More</a></button>
+      <button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3' onClick={() => navi("/blog/FirebaseInJavaScript-full")}><a>Read More</a></button>
        </div>
     </div>
    
@@ -72,7 +74,7 @@ export default function Blog() {
       </div>
       <h1 className='md:text-2xl text-xl my-4 font-bold'>{blog.title}</h1>
       <p className='fontDes text-gray-600 font-xs'>{blog.des}</p>
-      <button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3'><a>Read More</a></button>
+      <button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3' onClick={() => navi(blog.link)}><a>Read More</a></button>
        </div>
     </div>
       ))}

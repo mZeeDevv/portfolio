@@ -48,7 +48,7 @@ export default function Blog() {
     <div className='md:mx-16 flex flex-col my-3 mx-3'>
     <h1 className=' text-gray-400 fontDes uppercase font-semibold text-md md:text-xl'>Insights & Perspectives 💡</h1>
     <h1 className='uppercase font-bold md:text-2xl text-xl'>Blog Articles</h1>
-    <div className='flex items-center md:space-x-4 shadow-xl rounded-md flex-col md:flex-row'>
+    <div className='flex items-center md:space-x-4 shadow-xl rounded-md flex-col md:flex-row bg-white'>
       <img src={firebase} alt="blog_firebase" className='md:h-[45%] md:w-[45%] rounded-md h-[30%] w-full'/>
        <div className='w-full'>
        <div className='flex justify-between fontDes text-gray-500 my-2'>
@@ -63,7 +63,7 @@ export default function Blog() {
    
     <div className='grid md:grid-cols-2 my-5 mx-3 md:gap-4 lg:grid-cols-3 gap-3'>
       {blogs.map((blog, key) => (
-      <div className='flex shadow-xl rounded-md flex-col' key={key}>
+      <div className='flex shadow-xl rounded-md flex-col bg-white' key={key}>
       <img src={blog.picture} alt="blog_" className='rounded-md h-[55%] w-full'/>
        <div className='w-full p-2'>
        <div className='flex justify-between fontDes text-gray-500 my-2'>

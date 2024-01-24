@@ -37,7 +37,7 @@ export default function About() {
      </div>
  </div>
 
-   <div className=' border-t border-b border-gray-400 my-7 py-3'>
+   <div className=' border-t border-b border-gray-400 my-7 py-3 bg-white'>
     <h1 className='text-center md:text-3xl font py-3 text-xl font-semibold'>Communities I'm Part Of</h1>
     <div className='grid md:grid-cols-3 md:max-w-6xl mx-auto grid-cols-2 lg:grid-cols-4'>
      <div className='bg-center bg-cover md:w-[100px] md:h-[100px]  w-[70px] h-[70px] m-3' style={{backgroundImage: `url(${google})`}}></div>

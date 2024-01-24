@@ -1,15 +1,19 @@
 import React from 'react'
 import CUI from '../Media/cui.jpg'
 import iiui from '../Media/iiui.jpg'
+import mlsa from '../Media/MLSA.jpg'
+import coming from '../Media/coming.png'
+import Edopedevs from '../Media/Edopedevs.png'
+import Foother from '../Components/Foother'
 export default function Events() {
   const events = [
     {
-      image: CUI,
-      title: "Hackathon 101 Guide",
-      des: "Come and discover the exciting opportunities that hackathons offer and kickstart your journey into the world of innovation and problem-solving. Don't miss this chance to ignite your passion for technology and make lasting connections with fellow developers. Join us for Hackathon 101 and set yourself up for hackathon success!",
-      link: "https://gdsc.community.dev/events/details/developer-student-clubs-comsats-university-sahiwal-campus-presents-hackathon-101-code-collaborate-create-your-hackathon-guide/",
-      date: "Saturday, October 14, 2023",
-      duration: "1 Hour"
+      image: mlsa,
+      title: "Da JavaScript Hour",
+      des: "Event all about JavaScript, JavaScript and JavaScript. Our JavaScript event for Beginners event! If you've ever wanted to learn coding but didn't know where to start, this is your chance. Join us this Friday for a fun and easy introduction to JavaScript.",
+      link: "https://www.linkedin.com/posts/dope-devs_interested-in-learning-javascript-from-scratch-activity-7155550144984186880-MLRY?utm_source=share&utm_medium=member_desktop",
+      date: "Friday, October 26, 2024",
+      duration: "1.5 Hour"
     },
     {
       image: iiui,
@@ -19,15 +23,47 @@ export default function Events() {
       date: "Saturday, November 19, 2023",
       duration: "1 Hour"
     },
-
+    {
+      image: CUI,
+      title: "Hackathon 101 Guide",
+      des: "Come and discover the exciting opportunities that hackathons offer and kickstart your journey into the world of innovation and problem-solving. Don't miss this chance to ignite your passion for technology and make lasting connections with fellow developers. Join us for Hackathon 101 and set yourself up for hackathon success!",
+      link: "https://gdsc.community.dev/events/details/developer-student-clubs-comsats-university-sahiwal-campus-presents-hackathon-101-code-collaborate-create-your-hackathon-guide/",
+      date: "Saturday, October 14, 2023",
+      duration: "1 Hour"
+    },
+    {
+      image: Edopedevs,
+      title: "The 2023 Web Developer",
+      des: "Your niche is where you thrive! Discover yours at 'The 2023 Web Developer' event and stand out in the web dev cosmos.We are happy to see people learning new things and even more happy to see them talking and sharing knowledge with others on socials.",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7136008060346454016",
+      date: "Saturday, November 4, 2023",
+      duration: "1.5 Hour (As a Host)"
+    },
+    {
+      image: coming,
+      title: "Web Spark Series ",
+      des: "Web Spark Series is a series of events that will help you learn the basics of web development. The series will cover the basics of HTML, CSS, and JavaScript. So join us to get your hands dirty with code and learn the basics of web development.",
+      link: "",
+      date: "3 and 4 February, 2024",
+      duration: "Bootcamp"
+    },
+    {
+      image: coming,
+      title: "Exploring Firebase ",
+      des: "Firebase is a Backend-as-a-Service (BaaS) app development platform that provides hosted backend services such as a realtime database, cloud storage, authentication, crash reporting, machine learning, remote configuration, and hosting for your static files.",
+      link: "",
+      date: "9 February, 2024",
+      duration: "TBD"
+    },
   ]
   return (
+  <>
     <div className='md:mx-16 flex flex-col my-3 mx-3'>
     <h1 className=' text-gray-400 fontDes uppercase font-semibold text-md md:text-xl'>Chronicles of mZeeDev 💡</h1>
     <h1 className='uppercase font-bold md:text-xl text-md'>Past Gems & Upcoming Marvels</h1>
      {events.map((event, key) => (
-     <div className='flex shadow-xl rounded-md my-5 flex-col lg:flex-row' key={key}>
-     <img src={event.image} alt="blog_" className='rounded-md lg:w-[35%] w-full'/>
+     <div className='flex shadow-md rounded-md my-5 flex-col lg:flex-row bg-white' key={key}>
+     <img src={event.image} alt="blog_" className='rounded-sm lg:w-[35%] w-full lg:border-r-2 md:border-gray-500 border-b border-gray-600'/>
       <div className='w-full p-2 flex flex-col justify-center'>
       <div className='flex justify-between fontDes text-gray-500 my-2'>
        <p>{event.date}</p>
@@ -40,5 +76,7 @@ export default function Events() {
    </div>
      ))}
     </div>
+    <Foother/>
+    </>
   )
 }

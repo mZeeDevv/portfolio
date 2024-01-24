@@ -33,6 +33,9 @@ body {
         transform: translateY(0px);
     }
 }
+body {
+    background-color: #F9F9F9;
+}
 .float_sm {
     animation: undefined 2s infinite;
     animation-delay: .5s;

@@ -4,7 +4,7 @@ export default function Header() {
   const Navigator = useNavigate();
   return (
     <>
-    <div className='py-5 border-b border-gray-300 '>
+    <div className='py-5 border-b border-gray-300  '>
     <div className='flex items-center lg:space-x-96 lg:max-w-5xl max-w-2xl mx-auto'>
     <h1 className='text-2xl lg:text-3xl font-bold lg:inline font2 cursor-pointer hidden'>mZee.dev</h1>
     <ul className='flex lg:space-x-10 w-full justify-center space-x-3 text-xs'>

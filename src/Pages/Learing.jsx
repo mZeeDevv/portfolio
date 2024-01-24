@@ -5,6 +5,8 @@ import console from '../Media/consoletable.png'
 import Higher from '../Media/Higher.png'
 import Foother from '../Components/Foother'
 import Firebase from '../Media/Firebase.png'
+import Hannan from '../Media/Hannan.jpeg'
+import Arsalan from '../Media/Arsalan.jpeg'
 export default function Learing() {
  const content = [{
   title: 'ES16 Features', 
@@ -54,7 +56,7 @@ export default function Learing() {
 
   <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-6  gap-6 md:max-w-7xl md:mx-auto mx-3'>
   {content.map((item, key) => (
-      <div className='shadow-md rounded-md' key={key}>
+      <div className='shadow-md rounded-md bg-white' key={key}>
       <img src={item.image} alt={`content{${key}}`} className='w-full rounded-md h-[420px]'/>
       <div className='px-3 my-3'>
          <p className='text-xs text-gray-600 font my-1'>{item.date}</p>
@@ -80,22 +82,26 @@ export default function Learing() {
 
       <div className='bg-white text-black p-4 my-4 mx-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+        <div className='rounded-full w-[70px] h-[70px]'>
+          <img src={Hannan} alt="hanna_img" className='rounded-full w-[100%]' />
+        </div>
        <div>
-       <h1 className=' font-semibold'>Name Here</h1>
-        <p className='text-sm text-gray-400'>Position Here</p>
+       <h1 className=' font-semibold'>Hannan Khan</h1>
+        <p className='text-xs text-gray-500'>Technical Community Manager @  International Connector</p>
        </div>
         </div>
-        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+        <p className='my-2 text-gray-500 text-sm'>I’ve had the pleasure of seeing Hamza grow to be a one of the most promising voices in the Pakistani tech community. His knowledge of web technologies and his active participation in community building space are admirable to say the least. I’m eager to see what he is able to achieve next!</p>
       </div>
 
 
       <div className='bg-white text-black p-4 my-4 mx-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'>
+        <img src={Arsalan} alt="hanna_img" className='rounded-full w-[100%]' />
+        </div>
        <div>
-       <h1 className=' font-semibold'>Name Here</h1>
-        <p className='text-gray-400 text-sm'>Position Here</p>
+       <h1 className=' font-semibold'>Arsalan Khattak</h1>
+        <p className='text-gray-400 text-sm'>DevRel @ Bryntum </p>
        </div>
         </div>
         <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>

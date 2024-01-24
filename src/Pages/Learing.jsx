@@ -54,7 +54,7 @@ export default function Learing() {
 
   <div className='grid grid-cols-1 md:grid-cols-3 lg:gap-6  gap-6 md:max-w-7xl md:mx-auto mx-3'>
   {content.map((item, key) => (
-      <div className='shadow-md rounded-md'>
+      <div className='shadow-md rounded-md' key={key}>
       <img src={item.image} alt={`content{${key}}`} className='w-full rounded-md h-[420px]'/>
       <div className='px-3 my-3'>
          <p className='text-xs text-gray-600 font my-1'>{item.date}</p>

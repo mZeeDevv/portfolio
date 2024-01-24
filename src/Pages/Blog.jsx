@@ -62,8 +62,8 @@ export default function Blog() {
     </div>
    
     <div className='grid md:grid-cols-2 my-5 mx-3 md:gap-4 lg:grid-cols-3 gap-3'>
-      {blogs.map((blog) => (
-      <div className='flex shadow-xl rounded-md flex-col'>
+      {blogs.map((blog, key) => (
+      <div className='flex shadow-xl rounded-md flex-col' key={key}>
       <img src={blog.picture} alt="blog_" className='rounded-md h-[55%] w-full'/>
        <div className='w-full p-2'>
        <div className='flex justify-between fontDes text-gray-500 my-2'>

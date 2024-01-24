@@ -39,7 +39,7 @@ console.log(message)
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-          <button type='submit' className='font bg-gray-300 text-white p-3 rounded-sm'>Send message</button>
+          {/* <button type='submit' className='font bg-gray-300 text-white p-3 rounded-sm'>Send message</button> */}
         </form>
         </div>
         </div>

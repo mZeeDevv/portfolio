@@ -17,7 +17,7 @@ console.log(message)
         <div>
         <p className='max-w-5xl mx-auto'>Fill out the form below or shoot me an email.</p>
         <div className='max-w-5xl mx-auto md:px-10 md:py-10 py-3 px-3 shadow-md bg-white'>
-        <form  name="contact" method="POST" data-netlify="true">
+        <form  name="contact" method="POST" data-netlify="true" action='/events'>
           <input type="hidden" name="form-name" value="contact" />
           <div className='flex space-x-2' >
             <div className='md:w-[50%]'>
@@ -41,7 +41,7 @@ console.log(message)
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
               ></textarea>
-          <button type="submit" className='font bg-gray-300 text-white p-3 rounded-sm' onClick={() => navi("/")}>Send message</button>
+          <button type="submit" className='font bg-gray-300 text-white p-3 rounded-sm'>Send message</button>
         </form>
         </div>
         </div>

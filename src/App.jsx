@@ -31,6 +31,7 @@ function App() {
       <Route path='/blog/firebase-functions' element={<BFun/>}/>
       <Route path='/blog/FirebaseInJavaScript-full' element={<BFxJ/>}/>
       <Route path='/blog/from-a-gamer-to-full-stack-developer' element={<Gamer/>}/>
+      <Route path='/blog/javascript-dom-manipulation' element={<Dom/>}/>
 
     </Routes>
    </Router>

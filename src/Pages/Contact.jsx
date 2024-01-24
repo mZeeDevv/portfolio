@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {useNavigate} from 'react-router-dom'
 import insta from '../Media/insta.png'
 import Github from '../Media/Github.png'
-import link from '../Media/Link.png'
+import link from '../Media/link.png'
 import Foother from '../Components/Foother'
 export default function Contact() {
   const navi = useNavigate();

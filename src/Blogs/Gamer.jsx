@@ -3,7 +3,13 @@ import GTA from './BlogMedia/GTA.jpg'
 import PC from './BlogMedia/PC.jpg'
 import web from './BlogMedia/web.png'
 import Foother from '../Components/Foother'
+import { useEffect } from 'react';
+
 export default function Gamer() {
+  useEffect(() => {
+
+    window.scrollTo(0, 0);
+  }, []);
   document.title = "Blog | From a Gamer to Full Stack Developer"
   return (
     <>

@@ -11,7 +11,7 @@ export default function Events() {
       image: mlsa,
       title: "Da JavaScript Hour",
       des: "Event all about JavaScript, JavaScript and JavaScript. Our JavaScript event for Beginners event! If you've ever wanted to learn coding but didn't know where to start, this is your chance. Join us this Friday for a fun and easy introduction to JavaScript.",
-      link: "https://www.linkedin.com/posts/dope-devs_interested-in-learning-javascript-from-scratch-activity-7155550144984186880-MLRY?utm_source=share&utm_medium=member_desktop",
+      link: "https://stdntpartners-my.sharepoint.com/:v:/g/personal/wardah_abbasi_studentambassadors_com/EVX4UkR2sipKjoudAbpZTWkBPgs9GW7wIrTHUDe9MTu6RQ?e=wsos1D ",
       date: "Friday, October 26, 2024",
       duration: "1.5 Hour"
     },
@@ -62,7 +62,7 @@ export default function Events() {
     <h1 className=' text-gray-400 fontDes uppercase font-semibold text-md md:text-xl'>Chronicles of mZeeDev 💡</h1>
     <h1 className='uppercase font-bold md:text-xl text-md'>Past Gems & Upcoming Marvels</h1>
      {events.map((event, key) => (
-     <div className='flex shadow-md rounded-md my-5 flex-col lg:flex-row bg-white' key={key}>
+     <div className='flex shadow-md rounded-md my-5 flex-col lg:flex-row bg-white ' key={key}>
      <img src={event.image} alt="blog_" className='rounded-sm lg:w-[35%] w-full lg:border-r-2 md:border-gray-500 border-b border-gray-600'/>
       <div className='w-full p-2 flex flex-col justify-center'>
       <div className='flex justify-between fontDes text-gray-500 my-2'>
@@ -75,6 +75,7 @@ export default function Events() {
       </div>
    </div>
      ))}
+
     </div>
     <Foother/>
     </>

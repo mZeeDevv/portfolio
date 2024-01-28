@@ -8,7 +8,7 @@ import weather from '../Media/weather.png'
 import motors from '../Media/Motors.png'
 import multi from '../Media/mutli.jpg'
 import photogra from '../Media/photogra.jpg'
-import api from '../Media/Api.jpg'
+import api from '../Media/API.jpg'
 import Foother from '../Components/Foother'
 export default function Projects() {
   document.title = "mZeeDev | Projects"

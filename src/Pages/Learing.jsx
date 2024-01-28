@@ -6,6 +6,7 @@ import Higher from '../Media/Higher.png'
 import Foother from '../Components/Foother'
 import Firebase from '../Media/Firebase.png'
 import Hannan from '../Media/Hannan.jpeg'
+import Laiba from '../Media/Laiba.jpeg'
 import Arsalan from '../Media/Arsalan.jpeg'
 export default function Learing() {
  const content = [{
@@ -110,21 +111,25 @@ export default function Learing() {
 
       <div className='bg-white text-black p-4 mx-3 my-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'>
+        <img src={Laiba} alt="hanna_img" className='rounded-full w-[100%]' />
+        </div>
        <div>
-       <h1 className=' font-semibold'>Name Here</h1>
-        <p className='text-sm text-gray-400'>Position Here</p>
+       <h1 className=' font-semibold'>Laiba Shehryar</h1>
+        <p className='text-sm text-gray-400'>Campus Lead @ Microsoft Learn Student Ambassadors - IIUI</p>
        </div>
         </div>
-        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+        <p className='my-2 text-gray-500 text-sm'>
+        I've witnessed Hamza's remarkable journey, evolving into a prominent figure in the Pakistan's tech community. I am thoroughly impressed by his profound insights into the tech industry, coupled with a remarkable perception that showcases his exceptional understanding. Hamza's dedication, hard work, and persistence in the tech community are truly admirable. His contributions to various tech communities are noteworthy. I look forward to witnessing his future accomplishments!
+        </p>
       </div>
 
       <div className='bg-white text-black p-4 mx-3 my-3'>
         <div className='flex items-center space-x-3'>
         <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
        <div>
-       <h1 className=' font-semibold'>Name Here</h1>
-        <p className='text-sm text-gray-400'>Position Here</p>
+       <h1 className=' font-semibold'>Ayesha Tahir Awan</h1>
+        <p className='text-sm text-gray-400'>Campus Lead @ Google Developer Student Club - IIUI</p>
        </div>
         </div>
         <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>

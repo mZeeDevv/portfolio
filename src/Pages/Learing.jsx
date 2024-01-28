@@ -84,10 +84,10 @@ export default function Learing() {
 
       <div className='bg-white text-black p-4 my-4 mx-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px]'>
+        <div className='rounded-full w-[70px] h-[70px] flex bg-cover bg-center justify-center items-center'>
           <img src={Hannan} alt="hanna_img" className='rounded-full w-[100%]' />
         </div>
-       <div>
+       <div className='w-[70%]'>
        <h1 className=' font-semibold'>Hannan Khan</h1>
         <p className='text-xs text-gray-500'>Technical Community Manager @  International Connector</p>
        </div>
@@ -98,24 +98,25 @@ export default function Learing() {
 
       <div className='bg-white text-black p-4 my-4 mx-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'>
-        <img src={Arsalan} alt="hanna_img" className='rounded-full w-[100%]' />
+        <div className='rounded-full w-[70px] h-[70px] flex bg-cover bg-center justify-center items-center'>
+        <img src={Arsalan} alt="Arsalan_img" className='rounded-full w-[100%]' />
         </div>
-       <div>
+       <div className='w-[70%]'>
        <h1 className=' font-semibold'>Arsalan Khattak</h1>
-        <p className='text-gray-400 text-sm'>DevRel @ Bryntum </p>
+        <p className='text-gray-400 text-sm'>DevRel @ Bryntum | Ex @ Vercel  </p>
        </div>
         </div>
-        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+        <p className='my-2 text-gray-500 text-sm'> TEST -- He not only built an outstanding tech team in the boys' campus but also ensured we could keep rocking those bootcamps by designing agendas and developing teams for solution challenges together. Always ready to share his tech skills and lend a hand, Hamza has been a speaker at numerous tech events.
+          In short, Hamza is the real MVP and a crucial asset to our organization. High-fives all around for making GDSC awesome!</p>
       </div>
 
 
       <div className='bg-white text-black p-4 mx-3 my-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'>
-        <img src={Laiba} alt="hanna_img" className='rounded-full w-[100%]' />
+        <div className='rounded-full w-[70px] h-[70px] flex bg-cover bg-center justify-center items-center'>
+        <img src={Laiba} alt="Laiba_img" className='rounded-full w-[100%]' />
         </div>
-       <div>
+       <div className='w-[70%]'>
        <h1 className=' font-semibold'>Laiba Shehryar</h1>
         <p className='text-sm text-gray-400'>Campus Lead @ Microsoft Learn Student Ambassadors - IIUI</p>
        </div>
@@ -127,10 +128,10 @@ export default function Learing() {
 
       <div className='bg-white text-black p-4 mx-3 my-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px]'>
+        <div className='rounded-full w-[70px] h-[70px] flex bg-cover bg-center justify-center items-center'>
         <img src={Ayesha} alt="hanna_img" className='rounded-full w-[100%]' />
         </div>
-       <div>
+       <div className='w-[70%]'>
        <h1 className=' font-semibold'>Ayesha Tahir Awan</h1>
         <p className='text-sm text-gray-400'>Campus Lead @ Google Developer Student Club - IIUI</p>
        </div>

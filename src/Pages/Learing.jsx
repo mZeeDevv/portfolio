@@ -8,6 +8,7 @@ import Firebase from '../Media/Firebase.png'
 import Hannan from '../Media/Hannan.jpeg'
 import Laiba from '../Media/laiba.jpeg'
 import Arsalan from '../Media/Arsalan.jpeg'
+import Ayesha from '../Media/Ayesha.png'
 export default function Learing() {
  const content = [{
   title: 'ES16 Features', 
@@ -126,13 +127,20 @@ export default function Learing() {
 
       <div className='bg-white text-black p-4 mx-3 my-3'>
         <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] bg-gray-500'></div>
+        <div className='rounded-full w-[70px] h-[70px]'>
+        <img src={Ayesha} alt="hanna_img" className='rounded-full w-[100%]' />
+        </div>
        <div>
        <h1 className=' font-semibold'>Ayesha Tahir Awan</h1>
         <p className='text-sm text-gray-400'>Campus Lead @ Google Developer Student Club - IIUI</p>
        </div>
         </div>
-        <p className='my-2 text-gray-500 text-sm'>REVIEW HERE --- In JavaScript, a higher-order function is a function that takes one or more functions as arguments and/or returns a function as its result</p>
+        <p className='my-2 text-gray-500 text-sm'>A big shoutout to our Rockstar Technical Team Lead, Hamza. He is undeniably the heart and soul of our GDSC crew.
+
+Hamza is the brains behind "DevConnect," the pioneering tech community at IIUI. He not only built an outstanding tech team in the boys' campus but also ensured we could keep rocking those bootcamps by designing agendas and developing teams for solution challenges together. Always ready to share his tech skills and lend a hand, Hamza has been a speaker at numerous tech events.
+
+In short, Hamza is the real MVP and a crucial asset to our organization. High-fives all around for making GDSC awesome! 
+</p>
       </div>
     </div>
    </div>

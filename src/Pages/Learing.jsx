@@ -6,7 +6,7 @@ import Higher from '../Media/Higher.png'
 import Foother from '../Components/Foother'
 import Firebase from '../Media/Firebase.png'
 import Hannan from '../Media/Hannan.jpeg'
-import Laiba from '../Media/Laiba.jpeg'
+import Laiba from '../Media/laiba.jpeg'
 import Arsalan from '../Media/Arsalan.jpeg'
 export default function Learing() {
  const content = [{

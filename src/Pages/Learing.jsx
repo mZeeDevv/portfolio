@@ -96,19 +96,7 @@ export default function Learing() {
       </div>
 
 
-      <div className='bg-white text-black p-4 my-4 mx-3'>
-        <div className='flex items-center space-x-3'>
-        <div className='rounded-full w-[70px] h-[70px] flex bg-cover bg-center justify-center items-center'>
-        <img src={Arsalan} alt="Arsalan_img" className='rounded-full w-[100%]' />
-        </div>
-       <div className='w-[70%]'>
-       <h1 className=' font-semibold'>Arsalan Khattak</h1>
-        <p className='text-gray-400 text-sm'>DevRel @ Bryntum | Ex @ Vercel  </p>
-       </div>
-        </div>
-        <p className='my-2 text-gray-500 text-sm'> TEST -- He not only built an outstanding tech team in the boys' campus but also ensured we could keep rocking those bootcamps by designing agendas and developing teams for solution challenges together. Always ready to share his tech skills and lend a hand, Hamza has been a speaker at numerous tech events.
-          In short, Hamza is the real MVP and a crucial asset to our organization. High-fives all around for making GDSC awesome!</p>
-      </div>
+    
 
 
       <div className='bg-white text-black p-4 mx-3 my-3'>
@@ -123,6 +111,20 @@ export default function Learing() {
         </div>
         <p className='my-2 text-gray-500 text-sm'>
         I've witnessed Hamza's remarkable journey, evolving into a prominent figure in the Pakistan's tech community. I am thoroughly impressed by his profound insights into the tech industry, coupled with a remarkable perception that showcases his exceptional understanding. Hamza's dedication, hard work, and persistence in the tech community are truly admirable. His contributions to various tech communities are noteworthy. I look forward to witnessing his future accomplishments!
+        </p>
+      </div>
+      <div className='bg-white text-black p-4 my-4 mx-3'>
+        <div className='flex items-center space-x-3'>
+        <div className='rounded-full w-[70px] h-[70px] flex bg-cover bg-center justify-center items-center'>
+        <img src={Arsalan} alt="Arsalan_img" className='rounded-full w-[100%]' />
+        </div>
+       <div className='w-[70%]'>
+       <h1 className=' font-semibold'>Arsalan Khattak</h1>
+        <p className='text-gray-400 text-sm'>DevRel @ Bryntum | Ex @ Vercel  </p>
+       </div>
+        </div>
+        <p className='my-2 text-gray-500 text-sm'>
+        I have been mentoring Hamza since his college days. Hamza's passion for web technology and public speaking is truly remarkable. The way he delivered as a speaker at an event last year was a proud moment for us as well. It made me reflect on how he started from a single game language, PAWN, to using technologies like JavaScript, Firebase, and others.I believe Hamza's journey reflects not just his growth but also the evolution of technology in the past years. As he navigates the ever-changing landscape, I am excited to continue guiding him and witnessing the innovative paths he takes in his future endeavors.
         </p>
       </div>
 

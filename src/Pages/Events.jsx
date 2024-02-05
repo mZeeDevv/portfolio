@@ -5,6 +5,7 @@ import mlsa from '../Media/MLSA.jpg'
 import coming from '../Media/coming.png'
 import Edopedevs from '../Media/Edopedevs.png'
 import Foother from '../Components/Foother'
+import web from '../Media/WebS.png'
 export default function Events() {
   const events = [
     {
@@ -40,11 +41,11 @@ export default function Events() {
       duration: "1.5 Hour (As a Host)"
     },
     {
-      image: coming,
+      image: web,
       title: "Web Spark Series ",
       des: "Web Spark Series is a series of events that will help you learn the basics of web development. The series will cover the basics of HTML, CSS, and JavaScript. So join us to get your hands dirty with code and learn the basics of web development.",
       link: "",
-      date: "3 and 4 February, 2024",
+      date: "Sunday, 28th January, 2024",
       duration: "Bootcamp"
     },
     {

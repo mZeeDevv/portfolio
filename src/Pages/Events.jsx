@@ -4,7 +4,9 @@ import iiui from '../Media/iiui.jpg'
 import mlsa from '../Media/MLSA.jpg'
 import coming from '../Media/coming.png'
 import Edopedevs from '../Media/Edopedevs.png'
+import innovate from '../Media/innovate.jpg'
 import Foother from '../Components/Foother'
+import maaz from '../Media/maaz.jpg'
 import web from '../Media/WebS.png'
 export default function Events() {
   const events = [
@@ -44,9 +46,25 @@ export default function Events() {
       image: web,
       title: "Web Spark Series ",
       des: "Web Spark Series is a series of events that will help you learn the basics of web development. The series will cover the basics of HTML, CSS, and JavaScript. So join us to get your hands dirty with code and learn the basics of web development.",
-      link: "",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7157442096721756160",
       date: "Sunday, 28th January, 2024",
       duration: "Bootcamp"
+    },
+    {
+      image: innovate,
+      title: "Innovate-U Conference'24",
+      des: "The theme Empowering Tomorrow Navigating the Intersection of Emerging IT Technologies set the stage for an inspiring exploration into the world of cutting-edge technologies and their impact on the job market.Our esteemed lineup of speakers, each an industry expert, explored key domains essential for success in todays IT landscape",
+      link: "https://www.linkedin.com/feed/update/urn:li:activity:7165771320444477441?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7165771320444477441%29",
+      date: "Tuesday, 20th February, 2024",
+      duration: "7 Hours"
+    },
+    {
+      image: maaz,
+      title: "Introduction to Artificial Intelligence",
+      des: "The theme Empowering Tomorrow Navigating the Intersection of Emerging IT Technologies set the stage for an inspiring exploration into the world of cutting-edge technologies and their impact on the job market.Our esteemed lineup of speakers, each an industry expert, explored key domains essential for success in todays IT landscape",
+      link: "https://www.linkedin.com/posts/computer-science-society-css_ai-artificialintelliegence-activity-7169602712710365185-hGGJ?utm_source=share&utm_medium=member_desktop",
+      date: "Thursday, 7th March, 2024",
+      duration: "2 Hours"
     },
     {
       image: coming,

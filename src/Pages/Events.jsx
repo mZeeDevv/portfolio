@@ -61,7 +61,7 @@ export default function Events() {
     {
       image: maaz,
       title: "Introduction to Artificial Intelligence",
-      des: "The theme Empowering Tomorrow Navigating the Intersection of Emerging IT Technologies set the stage for an inspiring exploration into the world of cutting-edge technologies and their impact on the job market.Our esteemed lineup of speakers, each an industry expert, explored key domains essential for success in todays IT landscape",
+      des: "Join us as we delve into the fascinating world of Artificial Intelligence. From fundamental concepts to practical applications, this workshop is designed to equip you with the knowledge and skills to thrive in the AI-driven era. Join us for a dynamic workshop exploring the journey from research to commercialization in Artificial Intelligence, featuring Maaz Ali Nadeem. Gain insights into the exciting prospects of AI and its real-world applications.",
       link: "https://www.linkedin.com/posts/computer-science-society-css_ai-artificialintelliegence-activity-7169602712710365185-hGGJ?utm_source=share&utm_medium=member_desktop",
       date: "Thursday, 7th March, 2024",
       duration: "2 Hours"

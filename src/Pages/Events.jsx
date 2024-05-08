@@ -8,6 +8,7 @@ import innovate from '../Media/innovate.jpg'
 import Foother from '../Components/Foother'
 import maaz from '../Media/maaz.jpg'
 import web from '../Media/WebS.png'
+import ai from '../Media/AI.png'
 export default function Events() {
   const events = [
     {
@@ -67,11 +68,19 @@ export default function Events() {
       duration: "2 Hours"
     },
     {
+      image: ai,
+      title: "Intergrating Gemini into Web | #buildwithAI",
+      des: "Get ready to dive deep into the intersection of Artificial Intelligence and Web Development 💡 , exploring diverse frameworks and their applications! Whether you're a seasoned developer or just starting out, this workshop promises insights, inspiration, and innovation. Don't miss out on this incredible opportunity to expand your skills and knowledge! 🤗 ",
+      link: "https://www.linkedin.com/posts/computer-science-society-css_get-ready-to-dive-deep-into-the-intersection-activity-7193225798433038336-SnP4?utm_source=share&utm_medium=member_desktop",
+      date: "Saturday, May 11th, 2024",
+      duration: "2 Hours"
+    },
+    {
       image: coming,
       title: "Exploring Firebase ",
       des: "Firebase is a Backend-as-a-Service (BaaS) app development platform that provides hosted backend services such as a realtime database, cloud storage, authentication, crash reporting, machine learning, remote configuration, and hosting for your static files.",
       link: "",
-      date: "9 February, 2024",
+      date: "27th May, 2024",
       duration: "TBD"
     },
   ]

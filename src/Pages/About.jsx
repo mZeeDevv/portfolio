@@ -1,13 +1,15 @@
 import React from 'react'
-import profile from '../Media/profile.png'
+import profile from '../Media/0507.png'
 import bg from '../Media/blue.png'
 import google from '../Media/google.png'
 import microsoft from '../Media/microsoft.png'
 import devconnect from '../Media/Devconnect.jpg'
 import dopeDevs from '../Media/dopedevs.png'
 import Learing from './Learing'
+import { useNavigate } from 'react-router-dom'
 
 export default function About() {
+  const navi = useNavigate()
   document.title = "mZeeDev | Home"
   return (
  <>
@@ -33,7 +35,7 @@ export default function About() {
        And Technical Team Lead at <a className='fontPara' href='https://www.linkedin.com/company/google-developer-student-club-international-islamic-university-islamabad/'>Google Developers Student Club </a> 
         International Islamic University Islamabad.
       </p>
-      <p className='fontDes text-sm md:text-[15px]'>👉 Read  <span className='fontPara cursor-pointer'>How I started my Technical journey from a game</span></p>
+      <p className='fontDes text-sm md:text-[15px]'>👉 Read  <span className='fontPara cursor-pointer' onClick={() => navi("/blog/from-a-gamer-to-full-stack-developer")}>How I started my Technical journey from a game</span></p>
      </div>
  </div>
 

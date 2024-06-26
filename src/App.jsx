@@ -11,6 +11,7 @@ import FirebaseRiles from './Blogs/FirebaseRules'
 import BFxJ from './Blogs/FirebasexJava'
 import BFun from './Blogs/FirebaseFun'
 import Gamer from './Blogs/Gamer'
+import Profile from './Pages/Profile'
 
 
 import './App.css'
@@ -32,6 +33,7 @@ function App() {
       <Route path='/blog/FirebaseInJavaScript-full' element={<BFxJ/>}/>
       <Route path='/blog/from-a-gamer-to-full-stack-developer' element={<Gamer/>}/>
       <Route path='/blog/javascript-dom-manipulation' element={<Dom/>}/>
+      <Route path='/profile' element={<Profile/>}/>
 
     </Routes>
    </Router>

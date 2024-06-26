@@ -80,7 +80,7 @@ export default function Events() {
       title: "Exploring Firebase ",
       des: "Firebase is a Backend-as-a-Service (BaaS) app development platform that provides hosted backend services such as a realtime database, cloud storage, authentication, crash reporting, machine learning, remote configuration, and hosting for your static files.",
       link: "",
-      date: "27th May, 2024",
+      date: "27th July, 2024",
       duration: "TBD"
     },
   ]

@@ -5,18 +5,27 @@ import functions from '../Media/bfunctions.png'
 import Footer from '../Components/Foother'
 import rules from '../Media/brulesd.png'
 import domc from '../Media/bdom.png'
+import BBG from '../Media/BBG.png'
 import { useNavigate } from 'react-router-dom'
 
 export default function Blog() {
   document.title = "mZeeDev | Blog Articles"
   const navi = useNavigate();
   const blogs = [
+    {
+      title: "Exporting Grid Data to Excel file | Bryntum",
+      picture: BBG,
+     des: "Ever thought of exporting your grid data to an Excel file with just one click? If yes, it’s not that hard. Bryntum allows you to export the grid data to an Excel file effortlessly.",
+     link: "/blog/exporting-bryntum-grid",
+     read: "5 Minute read",
+     Date: "15 Aug, 2024"
+    },
   {
     title: "From a Gamer to Full Stack Developer",
     picture: history,
    des: "Read how a full time gamer become Full Stack Developer. What was the motivation behind it and how he achieved it.",
    link: "/blog/from-a-gamer-to-full-stack-developer",
-   read: "6 Minutes",
+   read: "6 Minute read",
    Date: "2 November 2023"
   },
   {
@@ -24,7 +33,7 @@ export default function Blog() {
     picture: functions,
    des: "Ever listen about Firebase Functions? If not then read this article to know about Firebase Functions and how to use them.",
    link: "/blog/firebase-functions",
-   read: "5 Minutes",
+   read: "5 Minute read",
    Date: "12 November 2023"
   },
   {
@@ -32,7 +41,7 @@ export default function Blog() {
     picture: rules,
    des: "Firebase Realtime Database Rules are very important to secure your database. Read this article to know more about Firebase Realtime Database Rules.",
    link: "/blog/firebase-realtime-database-rules",
-   read: "3 Minutes",
+   read: "3 Minute read",
    Date: "20 January 2024"
   },
   {
@@ -40,7 +49,7 @@ export default function Blog() {
     picture: domc,
    des: "JavaScript DOM Manipulation is very important to make your website dynamic. Read this article to know more about JavaScript DOM Manipulation.",
    link: "/blog/javascript-dom-manipulation",
-   read: "6 Minutes",
+   read: "6 Minute read",
    Date: "12 January 2024"
   },
 
@@ -55,7 +64,7 @@ export default function Blog() {
        <div className='w-full'>
        <div className='flex justify-between fontDes text-gray-500 my-2'>
         <p>9 December 2023</p>
-        <p className='mr-2'>8 minutes</p>
+        <p className='mr-2'>8 minute read</p>
       </div>
       <h1 className='md:text-2xl text-xl my-4 font-bold'>Adding Firebase to JavaScript Project</h1>
       <p className='fontDes text-gray-600 font-xs'>The complete guide of how to add Firebase to your JavaScript project. Firebase can be very useful while working on a full-stack project.</p>

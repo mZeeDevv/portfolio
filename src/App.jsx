@@ -10,6 +10,7 @@ import Dom from './Blogs/Dom'
 import FirebaseRiles from './Blogs/FirebaseRules'
 import BFxJ from './Blogs/FirebasexJava'
 import BFun from './Blogs/FirebaseFun'
+import BBG from './Blogs/BryntumGrid'
 import Gamer from './Blogs/Gamer'
 import Profile from './Pages/Profile'
 
@@ -32,6 +33,7 @@ function App() {
       <Route path='/blog/firebase-functions' element={<BFun/>}/>
       <Route path='/blog/FirebaseInJavaScript-full' element={<BFxJ/>}/>
       <Route path='/blog/from-a-gamer-to-full-stack-developer' element={<Gamer/>}/>
+      <Route path='/blog/exporting-bryntum-grid' element={<BBG/>}/>
       <Route path='/blog/javascript-dom-manipulation' element={<Dom/>}/>
       <Route path='/profile' element={<Profile/>}/>
 

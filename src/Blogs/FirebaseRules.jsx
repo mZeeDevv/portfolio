@@ -10,7 +10,6 @@ export default function FirebaseRules() {
   return (
     <div>
       <h1 className='text-2xl font-bold text-center'>This will be update soon</h1>
-   
     </div>
   )
 }

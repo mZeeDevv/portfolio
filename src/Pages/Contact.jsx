@@ -62,7 +62,7 @@ console.log(message)
         </div>
         <div className=' bg-white shadow-md p-3 cursor-pointer flex flex-col justify-center' onClick={() => window.open('https://www.linkedin.com/in/mzeedev/')}>
           <img src={link} alt="insta" className='md:w-[70%] mx-auto w-[30%]'/>
-          <h1 className='md:text-xl  text-center font'>Hamza Shaukat</h1>
+          <h1 className='md:text-xl  text-center font'>Hamza Khattak</h1>
         </div>
       </div>
       </div>

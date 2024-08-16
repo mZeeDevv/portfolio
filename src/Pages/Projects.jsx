@@ -9,15 +9,29 @@ import motors from '../Media/Motors.png'
 import multi from '../Media/mutli.jpg'
 import photogra from '../Media/photogra.jpg'
 import api from '../Media/API.jpg'
+import helphub from '../Media/HelpHub.png'
+import bryntum from '../Media/Bryntum.png'
 import Foother from '../Components/Foother'
 export default function Projects() {
   document.title = "mZeeDev | Projects"
   const projects = [
     {
+      title: "HelpHub",
+      image: helphub,
+      link: "https://glittery-tapioca-3efe48.netlify.app/",
+      des: "The Help Hub project aims to provide comprehensive support and resources aligned with the United Nations' Sustainable Development Goals (SDGs).",
+    },
+    {
       title: "Realthor Clone",
       image: realthor,
-      link: "https://github.com/mZeeDevv/portfolio_react",
+      link: "https://celebrated-licorice-4d30ee.netlify.app/",
       des: "A clone of a real estate website with some functionalities. This project is made with ReactJS, TailwindCSS and Firebase.",
+    },
+    {
+      title: "Firebase with Bryntum Grid",
+      image: bryntum,
+      link: "https://github.com/mZeeDevv/Firebase_grid",
+      des: "Bryntum Grid connected with Firebase. This project is made with ReactJS, Firebase. This project have the capability to add, delete and update data in Firebase.",
     },
     {
       title: "Automobile Workshop",
@@ -66,31 +80,11 @@ export default function Projects() {
    <>
     <div className='md:mx-16 flex flex-col my-3 mx-3 font'>
       <h1 className='md:text-xl font-bold text-blue-500'>Curious to know what I have been doing? Here's the history of my work.</h1>
-      <div className='flex md:space-x-3 flex-col md:flex-row space-y-3'>
-        <div className='md:w-[50%] shadow-md p-5'>
-          <img src={CodSoft} alt="Int_ship" className='rounded-full md:w-[30%] border border-black w-[50%]' />
-          <h1 className='text-lg font-bold my-3'>CodSoft</h1>
-          <h1 className='text-lg text-gray-600'>Web Developer Intern</h1>
-          <p className='text-gray-500 font'>Duration : 4 weeks</p>
-          <div className=' flex items-center justify-center'>
-            <a href='https://drive.google.com/file/d/1i5fySiD39OP1RxsDEEk3taW6WZ5Lhtjq/view'><button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3'>Offer Letter</button></a>
-          </div>
-        </div>
-        <div className='md:w-[50%] shadow-md p-2'>
-          <img src={techno} alt="tech_no" className='md:w-[10%] bg-black rounded-full w-[20%]' />
-          <h1 className='text-lg font-bold my-3'>TechnoHacks EduTech</h1>
-          <h1 className='text-lg text-gray-600'>Web Developer | C++ Programmer</h1>
-          <p className='text-gray-500 font'>Duration : 4 weeks</p>
-          <div className=' flex items-center justify-center'>
-            <a href='https://drive.google.com/file/d/1i5fySiD39OP1RxsDEEk3taW6WZ5Lhtjq/view'><button className='font bg-gray-900 text-white md:px-3 md:py-2 mt-4 rounded-md font-semibold p-2 mb-3'>Offer Letter</button></a>
-          </div>
-        </div>
-      </div>
       <h1 className='md:text-3xl text-2xl font-bold text-center my-10'>Projects </h1>
-     <div className='grid md:grid-cols-2 gap-24 lg:grid-cols-3 lg:gap-12'>
+     <div className='grid md:grid-cols-2 gap-24 lg:grid-cols-3 lg:gap-6'>
     {projects.map((project, key) => (
       <div key={key} className='bg-white'>
-       <img src={project.image} alt="project" className='w-full rounded-md h-[60%]' />
+       <img src={project.image} alt="project" className='w-full rounded-md h-[50%]' />
         <div className='px-3 shadow-md'>
         <h1 className='text-xl font-bold my-3'>{project.title}</h1>
         <p className='text-gray-500 font'>{project.des}</p>

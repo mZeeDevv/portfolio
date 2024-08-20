@@ -106,7 +106,7 @@ export default function Learing() {
         </div>
        <div className='w-[70%]'>
        <h1 className=' font-semibold'>Laiba Shehryar</h1>
-        <p className='text-sm text-gray-400'>Campus Lead @ Microsoft Learn Student Ambassadors - IIUI</p>
+        <p className='text-sm text-gray-400'>Campus Lead @ Microsoft Learn Student Ambassadors - IIUI | Gold MLSA </p>
        </div>
         </div>
         <p className='my-2 text-gray-500 text-sm'>

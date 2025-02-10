@@ -13,7 +13,7 @@ import BFun from './Blogs/FirebaseFun'
 import BBG from './Blogs/BryntumGrid'
 import Gamer from './Blogs/Gamer'
 import Profile from './Pages/Profile'
-
+import New from './Pages/New'
 
 import './App.css'
 function App() {
@@ -22,7 +22,8 @@ function App() {
    <Router>
     <Header/>
     <Routes>
-      <Route path='/' element={<About/>}/>
+    <Route path='/' element={<New/>}/>
+      <Route path='/old-/' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/events' element={<Events/>} />
       <Route path='/projects' element={<Projects/>}/>

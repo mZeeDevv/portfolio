@@ -22,8 +22,8 @@ function App() {
    <Router>
     <Header/>
     <Routes>
-    <Route path='/' element={<New/>}/>
-      <Route path='/old-/' element={<About/>}/>
+    {/* <Route path='/' element={<New/>}/> */}
+      <Route path='/' element={<About/>}/>
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/events' element={<Events/>} />
       <Route path='/projects' element={<Projects/>}/>

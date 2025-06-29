@@ -1,0 +1,454 @@
+# Portfolio Design Guidelines - Software Engineer
+
+## Overview
+
+This document outlines the design language and theme rules for a software engineer's personal portfolio website. The design system emphasizes professionalism, technical expertise, and modern aesthetics while maintaining excellent readability and accessibility. The theme uses a light, clean approach with subtle accents to create a sophisticated yet approachable presence. The design system is implemented using Tailwind CSS with custom configurations.
+
+## Color Palette
+
+### Primary Colors
+The primary color palette uses professional blues and teals to convey trust, technical expertise, and innovation while maintaining a modern, clean appearance.
+
+```
+portfolio-primary-50:  #f0f9ff - Lightest tint (backgrounds, hover states)
+portfolio-primary-100: #e0f2fe - Very light tint (section backgrounds)
+portfolio-primary-200: #bae6fd - Light tint (subtle backgrounds, borders)
+portfolio-primary-300: #7dd3fc - Mid-light tint (secondary elements)
+portfolio-primary-400: #38bdf8 - Light accent (highlights, links)
+portfolio-primary-500: #0ea5e9 - Standard accent (buttons, active states)
+portfolio-primary-600: #0284c7 - Main primary color (primary buttons, key elements)
+portfolio-primary-700: #0369a1 - Dark shade (hover states, emphasis)
+portfolio-primary-800: #075985 - Darker shade (active states, headers)
+portfolio-primary-900: #0c4a6e - Darkest shade (high contrast elements)
+```
+
+### Secondary Colors
+A sophisticated slate palette that adds depth and professionalism to the technical aesthetic.
+
+```
+portfolio-secondary-50:  #f8fafc - Lightest tint (card backgrounds)
+portfolio-secondary-100: #f1f5f9 - Very light tint (section dividers)
+portfolio-secondary-200: #e2e8f0 - Light tint (borders, subtle elements)
+portfolio-secondary-300: #cbd5e1 - Mid-light tint (disabled states)
+portfolio-secondary-400: #94a3b8 - Light accent (secondary text)
+portfolio-secondary-500: #64748b - Main secondary color (body text)
+portfolio-secondary-600: #475569 - Dark accent (headings, important text)
+portfolio-secondary-700: #334155 - Darker accent (emphasized text)
+portfolio-secondary-800: #1e293b - Very dark accent (main headings)
+portfolio-secondary-900: #0f172a - Darkest accent (high contrast text)
+```
+
+### Accent Colors
+Tech-focused accent colors for different skills and project categories.
+
+```
+portfolio-accent-green:   #10b981 - Success, completed projects, positive metrics
+portfolio-accent-emerald: #059669 - Environmental/sustainable tech projects
+portfolio-accent-teal:    #0d9488 - Data science, analytics projects
+portfolio-accent-cyan:    #0891b2 - Cloud computing, DevOps projects
+portfolio-accent-indigo:  #4f46e5 - Web development, frontend projects
+portfolio-accent-purple:  #7c3aed - AI/ML, innovative projects
+portfolio-accent-orange:  #ea580c - Mobile development, React Native
+portfolio-accent-amber:   #d97706 - JavaScript, Node.js projects
+```
+
+### Status Colors
+
+```
+portfolio-success: #10b981 - Success states, completed projects, achievements
+portfolio-warning: #f59e0b - Warning states, work in progress, beta features
+portfolio-error:   #ef4444 - Error states, deprecated projects, issues
+portfolio-info:    #3b82f6 - Information states, tips, additional details
+```
+
+### Neutral Colors
+Clean whites and grays for professional presentation and optimal readability.
+
+```
+portfolio-neutral-50:  #ffffff - Pure white (primary backgrounds, cards)
+portfolio-neutral-100: #fafafa - Off-white (page backgrounds)
+portfolio-neutral-200: #f5f5f5 - Light gray (section backgrounds)
+portfolio-neutral-300: #e5e5e5 - Medium light gray (borders, dividers)
+portfolio-neutral-400: #a3a3a3 - Medium gray (placeholder text, icons)
+portfolio-neutral-500: #737373 - Dark gray (secondary text)
+portfolio-neutral-600: #525252 - Darker gray (body text)
+portfolio-neutral-700: #404040 - Very dark gray (headings)
+portfolio-neutral-800: #262626 - Near black (main headings)
+portfolio-neutral-900: #171717 - True black (high-contrast text)
+```
+
+### Technology Category Colors
+Specific colors for different technology stacks and skill categories.
+
+```
+tech-frontend:     #4f46e5 - Frontend development (React, Vue, Angular)
+tech-backend:      #059669 - Backend development (Node.js, Python, Java)
+tech-database:     #7c3aed - Database technologies (SQL, NoSQL)
+tech-cloud:        #0891b2 - Cloud platforms (AWS, Azure, GCP)
+tech-mobile:       #ea580c - Mobile development (React Native, Flutter)
+tech-devops:       #d97706 - DevOps and deployment
+tech-ai-ml:        #8b5cf6 - AI/ML and data science
+tech-tools:        #6b7280 - Development tools and utilities
+
+skill-expert:      #10b981 - Expert level skills
+skill-advanced:    #3b82f6 - Advanced skills
+skill-intermediate: #f59e0b - Intermediate skills
+skill-learning:    #8b5cf6 - Currently learning
+
+project-completed: #10b981 - Completed projects
+project-ongoing:   #f59e0b - Ongoing projects
+project-planned:   #6b7280 - Planned projects
+project-featured:  #4f46e5 - Featured projects
+```
+
+## Typography
+
+### Font Family
+Three primary font families for different use cases:
+
+```
+font-sans: ['Inter', 'system-ui', 'sans-serif'] - Primary UI, body text, and general content
+font-mono: ['JetBrains Mono', 'Fira Code', 'monospace'] - Code snippets, technical details
+font-display: ['Space Grotesk', 'system-ui', 'sans-serif'] - Headings, hero text, professional branding
+```
+
+### Font Sizes
+Optimized for technical content and professional presentation:
+
+- text-xs: Code comments, fine print, metadata
+- text-sm: Code snippets, technical details, captions
+- text-base: Default body text, descriptions, content
+- text-lg: Section subtitles, skill labels, project titles
+- text-xl: Card headings, technology names
+- text-2xl: Section headings, page subtitles
+- text-3xl: Main page headings, section titles
+- text-4xl: Hero section headings, name/title
+- text-5xl: Portfolio name, main branding
+- text-6xl: Large hero displays, impact statements
+
+### Font Weight
+Professional weight usage for technical content:
+
+- font-light: Supporting text, descriptions
+- font-normal: Regular body text, content
+- font-medium: Navigation, labels, button text
+- font-semibold: Card titles, section headings
+- font-bold: Main headings, call-to-actions
+- font-extrabold: Hero text, portfolio name
+
+## Spacing System
+
+Professional spacing for clean, organized layouts:
+
+```
+4xs: 0.125rem (2px) - Tight spacing for code elements
+3xs: 0.25rem  (4px) - Very small spacing
+2xs: 0.375rem (6px) - Small spacing for compact elements
+xs:  0.5rem   (8px) - Compact spacing
+sm:  0.75rem  (12px) - Small spacing
+md:  1rem     (16px) - Standard spacing
+lg:  1.5rem   (24px) - Large spacing
+xl:  2rem     (32px) - Extra large spacing
+2xl: 3rem     (48px) - Section spacing
+3xl: 4rem     (64px) - Hero spacing
+4xl: 6rem     (96px) - Page spacing
+5xl: 8rem     (128px) - Large section spacing
+```
+
+## Border Radius
+
+Clean, modern edges for professional appearance:
+
+```
+rounded-sm: 0.125rem (2px) - Small elements, badges
+rounded-md: 0.375rem (6px) - Standard elements, buttons
+rounded-lg: 0.5rem   (8px) - Cards, containers
+rounded-xl: 0.75rem  (12px) - Large cards, sections
+rounded-2xl: 1rem    (16px) - Hero elements, featured content
+rounded-3xl: 1.5rem  (24px) - Special sections
+```
+
+## Shadows
+
+Subtle depth for professional presentation:
+
+```
+shadow-sm: 0 1px 2px 0 rgba(2, 132, 199, 0.05) - Subtle blue tint
+shadow-md: 0 4px 6px -1px rgba(2, 132, 199, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+shadow-lg: 0 10px 15px -3px rgba(2, 132, 199, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
+shadow-xl: 0 20px 25px -5px rgba(2, 132, 199, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+shadow-portfolio: 0 8px 32px rgba(2, 132, 199, 0.12) - Special portfolio card shadow
+shadow-code: 0 4px 12px rgba(15, 23, 42, 0.08) - Code block shadows
+```
+
+## Common Component Patterns
+
+### Buttons
+
+Primary Button (Contact, Download Resume):
+```
+px-8 py-3 bg-portfolio-primary-600 hover:bg-portfolio-primary-700 text-white font-medium rounded-lg transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5
+```
+
+Secondary Button (View Project, Learn More):
+```
+px-8 py-3 bg-transparent border-2 border-portfolio-primary-600 text-portfolio-primary-600 hover:bg-portfolio-primary-50 font-medium rounded-lg transition-all
+```
+
+Ghost Button (External Links):
+```
+px-6 py-2 text-portfolio-secondary-600 hover:text-portfolio-primary-600 hover:bg-portfolio-primary-50 font-medium rounded-md transition-all
+```
+
+### Cards
+
+Project Card:
+```
+bg-white rounded-xl shadow-md hover:shadow-portfolio transition-all duration-300 p-6 border border-portfolio-neutral-200 group
+```
+
+Skill Card:
+```
+bg-gradient-to-br from-portfolio-neutral-50 to-white rounded-lg shadow-sm hover:shadow-md transition-all p-4 border border-portfolio-neutral-200
+```
+
+Experience Card:
+```
+bg-white rounded-lg shadow-sm p-6 border-l-4 border-portfolio-primary-500 hover:shadow-md transition-all
+```
+
+### Section Headers
+
+```
+<div className="text-center mb-16">
+  <h2 className="text-4xl font-display font-bold text-portfolio-neutral-800 mb-4">Section Title</h2>
+  <p className="text-xl text-portfolio-secondary-500 max-w-3xl mx-auto">
+    Professional section description that showcases expertise
+  </p>
+</div>
+```
+
+### Badges
+
+Technology Badge:
+```
+inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-portfolio-primary-100 text-portfolio-primary-800
+```
+
+Skill Level Badge:
+```
+inline-flex items-center justify-center px-2 py-1 rounded text-xs font-medium bg-portfolio-accent-green text-white
+```
+
+Status Badge:
+```
+inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-portfolio-neutral-200 text-portfolio-neutral-700
+```
+
+### Code Blocks
+
+```
+<pre className="bg-portfolio-secondary-900 text-portfolio-neutral-100 p-4 rounded-lg overflow-x-auto shadow-code">
+  <code className="font-mono text-sm">
+    // Code content here
+  </code>
+</pre>
+```
+
+### Gradients
+
+Hero Background:
+```
+bg-gradient-to-br from-portfolio-primary-50 via-white to-portfolio-secondary-50
+```
+
+Section Background:
+```
+bg-gradient-to-r from-portfolio-neutral-50 to-white
+```
+
+Card Highlight:
+```
+bg-gradient-to-br from-portfolio-primary-500 to-portfolio-accent-teal
+```
+
+## Page Structure
+
+### Layout Containers
+
+Main content container:
+```
+max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+```
+
+Focused content container:
+```
+max-w-4xl mx-auto px-4 sm:px-6 lg:px-8
+```
+
+### Responsive Patterns
+
+Project grid:
+```
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6
+```
+
+Skills grid:
+```
+grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4
+```
+
+Timeline layout:
+```
+space-y-8 relative before:absolute before:left-4 before:top-0 before:h-full before:w-0.5 before:bg-portfolio-primary-200
+```
+
+### Common Section Padding
+
+```
+py-12 px-4 sm:px-6 lg:px-8 (standard section)
+py-16 px-4 sm:px-6 lg:px-8 (main content section)
+py-24 px-4 sm:px-6 lg:px-8 (hero section)
+```
+
+## Portfolio-Specific Component Patterns
+
+### Hero Section
+
+```
+<section className="relative bg-gradient-to-br from-portfolio-primary-50 via-white to-portfolio-secondary-50 py-24">
+  <div className="max-w-4xl mx-auto px-4 text-center">
+    <h1 className="text-5xl font-display font-bold text-portfolio-neutral-800 mb-6">
+      Software Engineer
+    </h1>
+    <p className="text-xl text-portfolio-secondary-500 mb-8 max-w-2xl mx-auto">
+      Building innovative solutions with modern technologies
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* CTA buttons */}
+    </div>
+  </div>
+</section>
+```
+
+### Project Showcase
+
+```
+<div className="bg-white rounded-xl shadow-portfolio p-6 group">
+  <div className="aspect-video bg-portfolio-neutral-100 rounded-lg mb-4 overflow-hidden">
+    {/* Project image/preview */}
+  </div>
+  <h3 className="text-xl font-semibold text-portfolio-neutral-800 mb-2">Project Name</h3>
+  <p className="text-portfolio-secondary-500 mb-4">Project description</p>
+  <div className="flex flex-wrap gap-2 mb-4">
+    {/* Technology badges */}
+  </div>
+  <div className="flex gap-3">
+    {/* Action buttons */}
+  </div>
+</div>
+```
+
+### Skills Section
+
+```
+<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+  {skills.map((skill) => (
+    <div className="bg-white rounded-lg p-4 shadow-sm border border-portfolio-neutral-200 text-center">
+      <div className="h-12 w-12 mx-auto mb-3 text-portfolio-primary-600">
+        {/* Skill icon */}
+      </div>
+      <h4 className="font-medium text-portfolio-neutral-800">{skill.name}</h4>
+      <div className="mt-2 h-2 bg-portfolio-neutral-200 rounded-full">
+        <div className="h-full bg-portfolio-primary-500 rounded-full" style={{width: `${skill.level}%`}}></div>
+      </div>
+    </div>
+  ))}
+</div>
+```
+
+### Experience Timeline
+
+```
+<div className="relative pl-8">
+  <div className="absolute left-0 top-0 h-full w-0.5 bg-portfolio-primary-200"></div>
+  {experiences.map((exp, index) => (
+    <div className="relative mb-8">
+      <div className="absolute -left-2 top-0 h-4 w-4 bg-portfolio-primary-500 rounded-full border-4 border-white"></div>
+      <div className="bg-white rounded-lg p-6 shadow-sm border border-portfolio-neutral-200">
+        <h3 className="text-xl font-semibold text-portfolio-neutral-800">{exp.title}</h3>
+        <p className="text-portfolio-primary-600 font-medium">{exp.company}</p>
+        <p className="text-portfolio-secondary-500 text-sm">{exp.duration}</p>
+        <p className="text-portfolio-secondary-600 mt-2">{exp.description}</p>
+      </div>
+    </div>
+  ))}
+</div>
+```
+
+### Contact Section
+
+```
+<section className="bg-gradient-to-r from-portfolio-primary-600 to-portfolio-accent-teal text-white py-16">
+  <div className="max-w-4xl mx-auto px-4 text-center">
+    <h2 className="text-3xl font-display font-bold mb-4">Let's Work Together</h2>
+    <p className="text-xl mb-8 opacity-90">
+      Ready to bring your ideas to life? Let's discuss your next project.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* Contact buttons */}
+    </div>
+  </div>
+</section>
+```
+
+## Usage Guidelines
+
+1. Color Philosophy:
+   - Use blue as the primary professional color
+   - White and light backgrounds for clean presentation
+   - Subtle gradients for visual interest without distraction
+   - Accent colors to categorize different technologies and skills
+
+2. Typography Hierarchy:
+   - Space Grotesk for professional headings and branding
+   - Inter for clean, readable body text and UI elements
+   - JetBrains Mono for code snippets and technical content
+
+3. Professional Considerations:
+   - Maintain generous whitespace for easy reading
+   - Ensure high contrast for accessibility
+   - Use consistent spacing and alignment
+   - Keep animations subtle and purposeful
+
+4. Portfolio-Specific Elements:
+   - Project cards should highlight key information clearly
+   - Skills should be visually organized and easy to scan
+   - Contact information should be prominently accessible
+   - Code samples should be properly formatted and highlighted
+
+5. Responsive Design:
+   - Mobile-first approach for all layouts
+   - Touch-friendly interactive elements
+   - Optimized loading for project images and demos
+   - Collapsible navigation for mobile devices
+
+6. Accessibility:
+   - High contrast ratios for all text
+   - Alternative text for project images
+   - Keyboard navigation support
+   - Screen reader friendly content structure
+
+7. Professional Brand Voice:
+   - Clean and technical without being cold
+   - Confident but approachable
+   - Focus on problem-solving and innovation
+   - Clear communication of technical expertise
+
+8. Performance Considerations:
+   - Optimized images for project showcases
+   - Lazy loading for project galleries
+   - Minimal JavaScript for smooth interactions
+   - Fast loading times for professional impression
+
+Note: This design system should be implemented using Tailwind CSS with custom theme configurations defined in `tailwind.config.js`. The color palette and components ensure a cohesive, professional appearance throughout the software engineer portfolio website.

@@ -1,0 +1,68 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'portfolio-primary': {
+          50: '#f0f9ff',
+          100: '#e0f2fe',
+          200: '#bae6fd',
+          300: '#7dd3fc',
+          400: '#38bdf8',
+          500: '#0ea5e9',
+          600: '#0284c7',
+          700: '#0369a1',
+          800: '#075985',
+          900: '#0c4a6e',
+        },
+        'portfolio-secondary': {
+          50: '#f8fafc',
+          100: '#f1f5f9',
+          200: '#e2e8f0',
+          300: '#cbd5e1',
+          400: '#94a3b8',
+          500: '#64748b',
+          600: '#475569',
+          700: '#334155',
+          800: '#1e293b',
+          900: '#0f172a',
+        },
+        'portfolio-neutral': {
+          50: '#ffffff',
+          100: '#fafafa',
+          200: '#f5f5f5',
+          300: '#e5e5e5',
+          400: '#a3a3a3',
+          500: '#737373',
+          600: '#525252',
+          700: '#404040',
+          800: '#262626',
+          900: '#171717',
+        },
+        'tech-frontend': '#4f46e5',
+        'tech-backend': '#059669',
+        'tech-database': '#7c3aed',
+        'tech-cloud': '#0891b2',
+        'tech-mobile': '#ea580c',
+        'tech-devops': '#d97706',
+        'tech-ai-ml': '#8b5cf6',
+        'tech-tools': '#6b7280',
+      },
+      fontFamily: {
+        'sans': ['Inter', 'system-ui', 'sans-serif'],
+        'mono': ['JetBrains Mono', 'Fira Code', 'monospace'],
+        'display': ['Space Grotesk', 'system-ui', 'sans-serif'],
+        'signature': ['Dancing Script', 'Brush Script MT', 'cursive'],
+      },
+      boxShadow: {
+        'portfolio': '0 8px 32px rgba(2, 132, 199, 0.12)',
+        'code': '0 4px 12px rgba(15, 23, 42, 0.08)',
+      },
+    },
+  },
+  plugins: [],
+}

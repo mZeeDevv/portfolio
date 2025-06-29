@@ -1,0 +1,437 @@
+# FashionVS Design Guidelines
+
+## Overview
+
+This document outlines the design language and theme rules used in the FashionVS fashion visual search website. It serves as a reference for maintaining design consistency across all components and pages. The design system is implemented using Tailwind CSS, with custom theme configurations defined in `tailwind.config.js`.
+
+## Color Palette
+
+### Primary Colors
+The primary color palette uses elegant pinks and roses to convey femininity, sophistication, and fashion-forward thinking while maintaining a modern, accessible appearance.
+
+```
+fashionvs-primary-50:  #fdf2f8 - Lightest tint (backgrounds, hover states)
+fashionvs-primary-100: #fce7f3 - Very light tint (backgrounds, borders)
+fashionvs-primary-200: #fbcfe8 - Light tint (backgrounds, hover effects)
+fashionvs-primary-300: #f9a8d4 - Mid-light tint (secondary elements)
+fashionvs-primary-400: #f472b6 - Light accent (highlights)
+fashionvs-primary-500: #ec4899 - Standard accent (buttons, highlights)
+fashionvs-primary-600: #db2777 - Main primary color (primary buttons, important elements)
+fashionvs-primary-700: #be185d - Dark shade (hover states for primary elements)
+fashionvs-primary-800: #9d174d - Darker shade (active states)
+fashionvs-primary-900: #831843 - Darkest shade (extreme contrast)
+```
+
+### Secondary Colors
+A sophisticated purple palette that adds depth and luxury to the fashion aesthetic.
+
+```
+fashionvs-secondary-50:  #faf5ff - Lightest tint
+fashionvs-secondary-100: #f3e8ff - Very light tint
+fashionvs-secondary-200: #e9d5ff - Light tint
+fashionvs-secondary-300: #d8b4fe - Mid-light tint
+fashionvs-secondary-400: #c084fc - Light accent
+fashionvs-secondary-500: #a855f7 - Main secondary color (secondary buttons, accents)
+fashionvs-secondary-600: #9333ea - Dark accent (hover states)
+fashionvs-secondary-700: #7c3aed - Darker accent
+fashionvs-secondary-800: #6b21a8 - Very dark accent
+fashionvs-secondary-900: #581c87 - Darkest accent
+```
+
+### Accent Colors
+Fashion-specific accent colors for different categories and interactions.
+
+```
+fashionvs-accent-rose:   #f43f5e - Rose accent for romantic styles
+fashionvs-accent-coral:  #ff7f7f - Coral accent for summer collections
+fashionvs-accent-gold:   #fbbf24 - Gold accent for luxury items
+fashionvs-accent-sage:   #84cc16 - Sage accent for sustainable fashion
+fashionvs-accent-navy:   #1e40af - Navy accent for professional wear
+fashionvs-accent-cream:  #fef3c7 - Cream accent for vintage styles
+```
+
+### State Colors
+
+```
+fashionvs-success: #10b981 - Success states, confirmations, in stock
+fashionvs-warning: #f59e0b - Warning states, low stock, size alerts
+fashionvs-error:   #ef4444 - Error states, out of stock, critical alerts
+fashionvs-info:    #8b5cf6 - Information states, style tips, recommendations
+```
+
+### Neutral Colors
+Clean whites and grays that let fashion items take center stage.
+
+```
+fashionvs-neutral-50:  #ffffff - Pure white (primary backgrounds)
+fashionvs-neutral-100: #f9fafb - Off-white (card backgrounds)
+fashionvs-neutral-200: #f3f4f6 - Light gray (borders, dividers)
+fashionvs-neutral-300: #e5e7eb - Medium light gray (disabled elements)
+fashionvs-neutral-400: #9ca3af - Medium gray (placeholder text)
+fashionvs-neutral-500: #6b7280 - Dark gray (secondary text)
+fashionvs-neutral-600: #4b5563 - Darker gray (primary text)
+fashionvs-neutral-700: #374151 - Very dark gray (emphasized text)
+fashionvs-neutral-800: #1f2937 - Near black (headings)
+fashionvs-neutral-900: #111827 - True black (high-contrast text)
+```
+
+### Fashion Category Colors
+Specific colors for different fashion categories and filters.
+
+```
+category-women:     #db2777 - Women's fashion
+category-men:       #1e40af - Men's fashion
+category-kids:      #f59e0b - Kids' fashion
+category-luxury:    #7c3aed - Luxury items
+category-casual:    #84cc16 - Casual wear
+category-formal:    #1f2937 - Formal wear
+category-vintage:   #d97706 - Vintage/retro items
+category-seasonal:  #0891b2 - Seasonal collections
+
+size-xs:    #fce7f3 - Extra small
+size-s:     #fbcfe8 - Small
+size-m:     #f9a8d4 - Medium
+size-l:     #f472b6 - Large
+size-xl:    #ec4899 - Extra large
+size-xxl:   #db2777 - Double extra large
+
+availability-in-stock:    #22c55e - In stock
+availability-low-stock:   #f59e0b - Low stock
+availability-out-of-stock: #ef4444 - Out of stock
+availability-pre-order:   #8b5cf6 - Pre-order available
+```
+
+## Typography
+
+### Font Family
+Three primary font families for different use cases:
+
+```
+font-sans: ['Inter', 'system-ui', 'sans-serif'] - Primary UI and body text
+font-display: ['Playfair Display', 'serif'] - Fashion headings and elegant display text
+font-fashion: ['Poppins', 'system-ui', 'sans-serif'] - Modern fashion branding and labels
+```
+
+### Font Sizes
+Tailored for fashion content and visual hierarchy:
+
+- text-xs: Price tags, size labels, fine print
+- text-sm: Product details, secondary information
+- text-base: Default body text, descriptions
+- text-lg: Product names, category labels
+- text-xl: Section subtitles, brand names
+- text-2xl: Category headings
+- text-3xl: Page section headings
+- text-4xl: Main page headings
+- text-5xl: Hero section headings
+- text-6xl: Brand displays, fashion statements
+
+### Font Weight
+Fashion-focused weight usage:
+
+- font-light: Elegant descriptions, luxury branding
+- font-normal: Regular product information
+- font-medium: Product names, navigation
+- font-semibold: Category headings, important details
+- font-bold: Call-to-action buttons, sale prices
+- font-extrabold: Fashion statements, brand names
+
+## Spacing System
+
+Fashion-optimized spacing for visual breathing room:
+
+```
+4xs: 0.125rem (2px) - Tight elements
+3xs: 0.25rem  (4px) - Very small spacing
+2xs: 0.375rem (6px) - Small spacing
+xs:  0.5rem   (8px) - Compact spacing
+sm:  0.75rem  (12px) - Small spacing
+md:  1rem     (16px) - Standard spacing
+lg:  1.5rem   (24px) - Large spacing
+xl:  2rem     (32px) - Extra large spacing
+2xl: 3rem     (48px) - Section spacing
+3xl: 4rem     (64px) - Hero spacing
+4xl: 6rem     (96px) - Page spacing
+```
+
+## Border Radius
+
+Soft, modern curves for fashion aesthetics:
+
+```
+rounded-sm: 0.25rem  (4px) - Small elements
+rounded-md: 0.5rem   (8px) - Standard elements
+rounded-lg: 0.75rem  (12px) - Cards, buttons
+rounded-xl: 1rem     (16px) - Large cards
+rounded-2xl: 1.5rem  (24px) - Hero elements
+rounded-full: 9999px - Avatar images, badges
+```
+
+## Shadows
+
+Elegant depth for fashion presentation:
+
+```
+shadow-sm: 0 1px 2px 0 rgba(219, 39, 119, 0.05) - Subtle pink tint
+shadow-md: 0 4px 6px -1px rgba(219, 39, 119, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+shadow-lg: 0 10px 15px -3px rgba(219, 39, 119, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)
+shadow-xl: 0 20px 25px -5px rgba(219, 39, 119, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)
+shadow-fashion: 0 8px 32px rgba(219, 39, 119, 0.12) - Special fashion card shadow
+```
+
+## Common Component Patterns
+
+### Buttons
+
+Primary Button (Shop Now, Add to Cart):
+```
+px-8 py-3 bg-fashionvs-primary-600 hover:bg-fashionvs-primary-700 text-white font-medium rounded-lg transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5
+```
+
+Secondary Button (View Details, Wishlist):
+```
+px-8 py-3 bg-transparent border-2 border-fashionvs-primary-600 text-fashionvs-primary-600 hover:bg-fashionvs-primary-50 font-medium rounded-lg transition-all
+```
+
+Luxury Button (Premium Items):
+```
+px-8 py-3 bg-gradient-to-r from-fashionvs-secondary-600 to-fashionvs-primary-600 text-white font-medium rounded-lg transition-all shadow-lg hover:shadow-xl
+```
+
+### Cards
+
+Product Card:
+```
+bg-white rounded-xl shadow-md hover:shadow-fashion transition-all duration-300 p-0 overflow-hidden group
+```
+
+Category Card:
+```
+bg-gradient-to-br from-fashionvs-primary-50 to-white rounded-xl shadow-md hover:shadow-lg transition-all p-6 border border-fashionvs-primary-100
+```
+
+Designer Spotlight Card:
+```
+bg-white rounded-2xl shadow-lg p-8 border-l-4 border-fashionvs-accent-gold relative overflow-hidden
+```
+
+### Section Headers
+
+```
+<div className="text-center mb-16">
+  <h2 className="text-4xl font-display font-bold text-fashionvs-neutral-900 mb-4">Section Title</h2>
+  <p className="text-xl text-fashionvs-neutral-600 max-w-3xl mx-auto font-light">
+    Elegant section description that captures the fashion essence
+  </p>
+</div>
+```
+
+### Badges
+
+Size Badge:
+```
+inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-fashionvs-primary-100 text-fashionvs-primary-800
+```
+
+Sale Badge:
+```
+inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-bold bg-fashionvs-accent-coral text-white
+```
+
+New Arrival Badge:
+```
+inline-flex items-center justify-center px-3 py-1 rounded-full text-sm font-medium bg-fashionvs-accent-sage text-white
+```
+
+### Gradients
+
+Hero Background:
+```
+bg-gradient-to-br from-fashionvs-primary-500 via-fashionvs-secondary-500 to-fashionvs-primary-700
+```
+
+Category Section Background:
+```
+bg-gradient-to-r from-fashionvs-primary-50 to-fashionvs-secondary-50
+```
+
+Luxury Section Background:
+```
+bg-gradient-to-br from-fashionvs-neutral-50 via-white to-fashionvs-primary-50
+```
+
+### Icons
+
+Fashion icons with consistent styling:
+```
+h-5 w-5 (small UI icons)
+h-6 w-6 (standard icons)
+h-8 w-8 (feature icons)
+h-12 w-12 (category icons)
+text-fashionvs-primary-600 (primary icons)
+text-fashionvs-neutral-500 (secondary icons)
+```
+
+## Page Structure
+
+### Layout Containers
+
+Main content container:
+```
+max-w-7xl mx-auto px-4 sm:px-6 lg:px-8
+```
+
+Fashion grid container:
+```
+max-w-6xl mx-auto px-4 sm:px-6 lg:px-8
+```
+
+### Responsive Patterns
+
+Product grids:
+```
+grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 lg:gap-6
+```
+
+Category sections:
+```
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8
+```
+
+### Common Section Padding
+
+```
+py-12 px-4 sm:px-6 lg:px-8 (standard section)
+py-16 px-4 sm:px-6 lg:px-8 (feature section)
+py-24 px-4 sm:px-6 lg:px-8 (hero section)
+```
+
+## Fashion-Specific Component Patterns
+
+### Visual Search Interface
+
+Image upload area:
+```
+<div className="border-2 border-dashed border-fashionvs-primary-300 rounded-xl p-12 text-center bg-fashionvs-primary-50 hover:bg-fashionvs-primary-100 transition-colors">
+  <div className="mx-auto h-16 w-16 text-fashionvs-primary-600 mb-4">
+    {/* Upload icon */}
+  </div>
+  <h3 className="text-xl font-medium text-fashionvs-neutral-900 mb-2">Upload Your Fashion Image</h3>
+  <p className="text-fashionvs-neutral-600">Drag and drop or click to select an image</p>
+</div>
+```
+
+### Product Image Gallery
+
+```
+<div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <div className="space-y-4">
+    <div className="aspect-square rounded-xl overflow-hidden bg-fashionvs-neutral-100">
+      {/* Main product image */}
+    </div>
+    <div className="grid grid-cols-4 gap-2">
+      {/* Thumbnail images */}
+    </div>
+  </div>
+</div>
+```
+
+### Size Selector
+
+```
+<div className="flex flex-wrap gap-2">
+  {sizes.map((size) => (
+    <button className="px-4 py-2 border border-fashionvs-neutral-300 rounded-md hover:border-fashionvs-primary-500 hover:bg-fashionvs-primary-50 transition-all">
+      {size}
+    </button>
+  ))}
+</div>
+```
+
+### Color Picker
+
+```
+<div className="flex flex-wrap gap-3">
+  {colors.map((color) => (
+    <button className="h-8 w-8 rounded-full border-2 border-fashionvs-neutral-300 hover:border-fashionvs-primary-500 transition-colors" style={{backgroundColor: color}}>
+    </button>
+  ))}
+</div>
+```
+
+### Price Display
+
+```
+<div className="flex items-center space-x-2">
+  <span className="text-2xl font-bold text-fashionvs-neutral-900">${currentPrice}</span>
+  {originalPrice && (
+    <span className="text-lg text-fashionvs-neutral-500 line-through">${originalPrice}</span>
+  )}
+  {discount && (
+    <span className="px-2 py-1 bg-fashionvs-accent-coral text-white text-sm font-medium rounded">
+      {discount}% OFF
+    </span>
+  )}
+</div>
+```
+
+### Fashion Filter Sidebar
+
+```
+<div className="space-y-6">
+  <div className="border-b border-fashionvs-neutral-200 pb-4">
+    <h3 className="text-lg font-medium text-fashionvs-neutral-900 mb-3">Category</h3>
+    <div className="space-y-2">
+      {/* Filter options */}
+    </div>
+  </div>
+</div>
+```
+
+## Usage Guidelines
+
+1. Color Philosophy:
+   - Use pink as the primary brand color for fashion-forward elements
+   - White backgrounds keep focus on fashion items
+   - Purple secondary colors add sophistication
+   - Accent colors categorize different fashion segments
+
+2. Typography Hierarchy:
+   - Playfair Display for elegant fashion statements and luxury branding
+   - Inter for clean, readable UI text and product information
+   - Poppins for modern fashion labels and contemporary branding
+
+3. Fashion-Specific Considerations:
+   - Images should have consistent lighting and backgrounds
+   - Product cards need space for high-quality imagery
+   - Color accuracy is crucial for fashion items
+   - Size and fit information should be prominently displayed
+
+4. Visual Search Elements:
+   - Upload areas should be intuitive and visually appealing
+   - Results should be displayed in a clean grid format
+   - Similarity scores can use color-coded indicators
+
+5. Responsive Fashion Design:
+   - Mobile-first approach for shopping behavior
+   - Touch-friendly size selectors and color pickers
+   - Optimized image loading for visual search results
+
+6. Accessibility:
+   - High contrast between text and backgrounds
+   - Alternative text for all fashion images
+   - Keyboard navigation for all interactive elements
+   - Screen reader friendly product information
+
+7. Fashion Brand Voice:
+   - Sophisticated yet approachable
+   - Emphasize style discovery and personal expression
+   - Clear calls-to-action that inspire fashion choices
+   - Inclusive language for all body types and styles
+
+8. Performance Considerations:
+   - Optimized image loading for fashion galleries
+   - Progressive loading for visual search results
+   - Efficient caching for frequently accessed items
+
+Note: This design system is implemented using Tailwind CSS with custom theme configurations. The color palette and components should be defined in `tailwind.config.js` for consistent application across the fashion visual search platform.

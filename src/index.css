@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations for Skills component */
+@keyframes orbit {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(400px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(400px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-inner {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(220px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(220px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit-outer {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(340px) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg) translateX(340px) rotate(-360deg);
+  }
+}
+
+@keyframes rotateLine {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility classes for animations */
+.animate-orbit {
+  animation: orbit 25s linear infinite;
+}
+
+.animate-orbit-inner {
+  animation: orbit-inner 20s linear infinite;
+}
+
+.animate-orbit-outer {
+  animation: orbit-outer 30s linear infinite;
+}
+
+.animate-rotate-line {
+  animation: rotateLine 25s linear infinite;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+/* Line clamp utility for text truncation */
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -1,6 +1,13 @@
-import React, { useState } from 'react';
-
+import React, { useState, useEffect } from 'react';
+import gdg from '../media/gdg.png'
+import mlh from '../media/mlh.jpg'
+import mls from '../media/mls.png'
 const Events = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [selectedEvent, setSelectedEvent] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -95,72 +102,60 @@ const Events = () => {
 
   const communities = [
     {
-      name: "Developer Community Hub",
-      description: "Leading developer community focused on modern web technologies and innovation",
-      image: "/api/placeholder/100/100",
+      name: "Google Developer Groups on Campus - IIUI",
+      description: "Leading developer community focused on modern Google technologies and innovation",
+      image: gdg,
       color: "from-blue-500 to-indigo-600",
       positions: [
         {
           role: "Community Manager",
-          tenure: "2022 - Present",
+          tenure: "2024 - 2025",
           type: "current"
         },
         {
-          role: "Senior Member",
-          tenure: "2020 - 2022",
+          role: "Techincal Lead",
+          tenure: "2023 - 2024",
           type: "previous"
         }
       ]
     },
     {
-      name: "React Enthusiasts",
-      description: "Active community of React developers sharing knowledge and best practices",
-      image: "/api/placeholder/100/100",
+      name: "Mircosoft Learn Student Ambassadors, Islamabad",
+      description: "City-wise Largest Microsoft Chapter in Pakistan, empowering students with Microsoft technologies",
+      image: mls,
       color: "from-cyan-500 to-blue-600",
       positions: [
         {
-          role: "Core Contributor",
-          tenure: "2021 - Present",
+          role: "Community Manager",
+          tenure: "2025 - Present",
           type: "current"
         },
         {
-          role: "Active Member",
-          tenure: "2019 - 2021",
+          role: "Operations Team Member",
+          tenure: "2024 - 2025",
           type: "previous"
         }
       ]
     },
     {
-      name: "Open Source Collective",
+      name: "Major League Hacking (MLH)",
       description: "Contributing to open source projects and mentoring new contributors",
-      image: "/api/placeholder/100/100", 
+      image: mlh, 
       color: "from-green-500 to-emerald-600",
       positions: [
         {
-          role: "Project Maintainer",
-          tenure: "2020 - Present",
-          type: "current"
+          role: "Student Mentor",
+          tenure: "2021 - 2022",
+          type: "previous"
         },
         {
-          role: "Contributor",
-          tenure: "2018 - 2020",
+          role: "Community Member",
+          tenure: "2020 - 2021",
           type: "previous"
         }
       ]
     },
-    {
-      name: "Tech Speakers Network",
-      description: "Network of tech professionals organizing events and sharing expertise globally",
-      image: "/api/placeholder/100/100",
-      color: "from-purple-500 to-violet-600",
-      positions: [
-        {
-          role: "Speaker & Organizer",
-          tenure: "2021 - Present",
-          type: "current"
-        }
-      ]
-    }
+    
   ];
 
   return (
@@ -216,11 +211,13 @@ const Events = () => {
                 <div className={`h-20 bg-gradient-to-r ${community.color} relative overflow-hidden`}>
                   <div className="absolute inset-0 bg-white bg-opacity-10"></div>
                   <div className="absolute bottom-4 left-6">
-                    <div className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      {/* Community Icon Placeholder */}
-                      <svg className={`w-8 h-8 bg-gradient-to-r ${community.color} bg-clip-text text-transparent`} fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A2.5 2.5 0 0 0 17.5 7H16c-.8 0-1.5.7-1.5 1.5v8.5H16v3h4zM12.5 11H11v2h1.5c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5H10c-.83 0-1.5-.67-1.5-1.5V20H7v-6.5c0-1.1.9-2 2-2h3.5v-.5zM6 10.5c1.38 0 2.5-1.12 2.5-2.5S7.38 5.5 6 5.5 3.5 6.62 3.5 8s1.12 2.5 2.5 2.5z"/>
-                      </svg>
+                    <div className="w-16 h-16 bg-white rounded-full shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-300 overflow-hidden">
+                      {/* Community Image */}
+                      <img 
+                        src={community.image} 
+                        alt={community.name}
+                        className="w-12 h-12 object-contain rounded-full"
+                      />
                     </div>
                   </div>
                 </div>

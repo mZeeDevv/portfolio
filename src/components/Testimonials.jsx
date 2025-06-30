@@ -27,7 +27,7 @@ export default function Testimonials() {
       role: "Ecosystem Builder",
       company: "Notion, Slack & Miro",
       image: usman,
-      content: "Hamza's content creation and tutorials have been incredibly helpful. His explanations make difficult concepts easy to understand."
+      content: "When it comes Hamza, he shows a unique blend for developing new products while creating developer centric communities. i have seen Hamza lead numerous communities for major entities like Slack, Microsoft Learn, and Google Developers. Apart from that Hamza shows a remarkable aptitude for developer technologies and has a knack for impactful open source contributions. His work from basic web apps to cross functional solutions show that Hamza is an upcoming multidimensional resource."
     }
   ];
 

@@ -10,36 +10,106 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Portfolio Website",
-      description: "A modern, responsive portfolio website built with React, Vite, and Tailwind CSS. Features a clean design with smooth animations and optimized performance.",
-      technologies: ["React", "Vite", "Tailwind CSS", "JavaScript"],
-      category: "Web Development",
-      status: "Completed",
-      github: "#",
-      live: "#",
-      image: "/api/placeholder/400/250"
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description: "A full-stack task management application with real-time updates, user authentication, and collaborative features built with React and Firebase.",
-      technologies: ["React", "Firebase", "Material-UI", "Node.js"],
+      title: "Mendantra",
+      description: "Your AI powered doctor, a full stack application that leverages the power of AI to provide personalized health insights and recommendations.",
+      technologies: ["Python", "Vite", "Tailwind CSS", "JavaScript", "React", "Gemini", "FastAPI", "RAG"],
       category: "Full Stack",
       status: "In Progress",
       github: "#",
       live: "#",
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      showCode: true,
+      showPreview: false
     },
     {
-      id: 3,
-      title: "E-commerce Platform",
-      description: "A comprehensive e-commerce solution with payment integration, inventory management, and admin dashboard built with modern web technologies.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      id: 2,
+      title: "JetSeeker",
+      description: "A full stack project for booking flights, hotels, and car rentals with real-time availability and user authentication.",
+      technologies: ["React", "Firebase", "Booking.com API", "Node.js", "Express.js", "Tailwind CSS", "Chart.js"],
       category: "Full Stack",
       status: "Completed",
       github: "#",
+      live: null,
+      image: "/api/placeholder/400/250",
+      showCode: true,
+      showPreview: false
+    },
+    {
+      id: 3,
+      title: "Blood Beacon ",
+      description: "A full stack project for blood donation, connecting donors with recipients in need, featuring real-time notifications and user profiles.",
+      technologies: ["React", "Firebase", "Tailwind CSS"],
+      category: "Full Stack",
+      status: "Completed",
+      github: null,
       live: "#",
-      image: "/api/placeholder/400/250"
+      image: "/api/placeholder/400/250",
+      showCode: true,
+      showPreview: true
+    },
+      {
+      id: 4,
+      title: "Realtor Clone",
+      description: "A full stack project for real estate listings, allowing users to search, filter, and view properties with detailed information and images.",
+      technologies: ["React", "Firebase", "Tailwind CSS"],
+      category: "Full Stack",
+      status: "Completed",
+      github: null,
+      live: "#",
+      image: "/api/placeholder/400/250",
+      showCode: true,
+      showPreview: false
+    },
+    {
+      id: 5,
+      title: "ProCare Nepal",
+      description: "A full stack project for healthcare services in Nepal, providing a platform for patients to book appointments and access medical information.",
+      technologies: ["React", "Firebase", "Tailwind CSS"],
+      category: "Full Stack",
+      status: "Completed",
+      github: null,
+      live: "#",
+      image: "/api/placeholder/400/250",
+      showCode: false,
+      showPreview: true
+    },
+    {
+      id: 6,
+      title: "ProCare Nepal Software",
+      description: "A WebApp for each hospital in Nepal to manage their patients, doctors, and appointments. It provides a user-friendly interface for both patients and healthcare providers.",
+      technologies: ["React", "Firebase", "Tailwind CSS"],
+      category: "Full Stack",
+      status: "Completed",
+      github: null,
+      live: "#",
+      image: "/api/placeholder/400/250",
+      showCode: false,
+      showPreview: true
+    },
+     {
+      id: 7,
+      title: "Code Testify",
+      description: "A project for Software providers to show their service and for users to find the best software for their needs. It includes a user-friendly interface and advanced search functionality.",
+      technologies: ["React", "Tailwind CSS"],
+      category: "Frontend",
+      status: "Completed",
+      github: null,
+      live: "#",
+      image: "/api/placeholder/400/250",
+      showCode: false,
+      showPreview: true
+    },  {
+      id: 8,
+      title: "Community Website",
+      description: "A full stack project for community to show their on-going events, register users and allow users to post their events. It includes a user-friendly interface and advanced search functionality.",
+      technologies: ["React", "Tailwind CSS", "MongoDB", "Express.js", "Node.js", ],
+      category: "Full Stack",
+      status: "Completed",
+      github: null,
+      live: "#",
+      image: "/api/placeholder/400/250",
+      showCode: true,
+      showPreview: false
     }
   ];
 
@@ -94,22 +164,32 @@ const Projects = () => {
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
                   <div className="flex space-x-4">
-                    <a
-                      href={project.github}
-                      className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                    >
-                      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                      </svg>
-                    </a>
-                    <a
-                      href={project.live}
-                      className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors"
-                    >
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                      </svg>
-                    </a>
+                    {project.showCode && (
+                      <a
+                        href={project.github || "#"}
+                        className={`w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors ${
+                          !project.github ? 'cursor-not-allowed opacity-75' : ''
+                        }`}
+                        {...(!project.github && { onClick: (e) => e.preventDefault() })}
+                      >
+                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.30.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                      </a>
+                    )}
+                    {project.showPreview && (
+                      <a
+                        href={project.live || "#"}
+                        className={`w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/30 transition-colors ${
+                          !project.live || project.live === "#" ? 'cursor-not-allowed opacity-75' : ''
+                        }`}
+                        {...((!project.live || project.live === "#") && { onClick: (e) => e.preventDefault() })}
+                      >
+                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
@@ -145,18 +225,28 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex space-x-3">
-                  <a
-                    href={project.github}
-                    className="flex-1 px-4 py-2 bg-portfolio-neutral-100 hover:bg-portfolio-neutral-200 text-portfolio-neutral-700 text-sm font-medium rounded-lg transition-colors text-center"
-                  >
-                    View Code
-                  </a>
-                  <a
-                    href={project.live}
-                    className="flex-1 px-4 py-2 bg-portfolio-primary-600 hover:bg-portfolio-primary-700 text-white text-sm font-medium rounded-lg transition-colors text-center"
-                  >
-                    Live Demo
-                  </a>
+                  {project.showCode && (
+                    <a
+                      href={project.github || "#"}
+                      className={`px-4 py-2 bg-portfolio-neutral-100 hover:bg-portfolio-neutral-200 text-portfolio-neutral-700 text-sm font-medium rounded-lg transition-colors text-center ${
+                        project.showPreview ? 'flex-1' : 'w-full'
+                      } ${!project.github || project.github === "#" ? 'cursor-not-allowed opacity-75' : ''}`}
+                      {...((!project.github || project.github === "#") && { onClick: (e) => e.preventDefault() })}
+                    >
+                      View Code
+                    </a>
+                  )}
+                  {project.showPreview && (
+                    <a
+                      href={project.live || "#"}
+                      className={`px-4 py-2 bg-portfolio-primary-600 hover:bg-portfolio-primary-700 text-white text-sm font-medium rounded-lg transition-colors text-center ${
+                        project.showCode ? 'flex-1' : 'w-full'
+                      } ${!project.live || project.live === "#" ? 'cursor-not-allowed opacity-75' : ''}`}
+                      {...((!project.live || project.live === "#") && { onClick: (e) => e.preventDefault() })}
+                    >
+                      Preview
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

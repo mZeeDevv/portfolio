@@ -37,7 +37,7 @@ export default function Testimonials() {
         {/* Header Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-portfolio-neutral-800 mb-6">
-            Community Feedback
+            What Others Say About Me
           </h2>
           <p className="text-xl text-portfolio-secondary-600 max-w-3xl mx-auto mb-8">
             Here's what fellow developers and community members have to say about 

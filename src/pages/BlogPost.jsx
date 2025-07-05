@@ -554,10 +554,10 @@ Start with the basics - authentication and a simple database - then gradually ex
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+      <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-portfolio-neutral-50 via-white to-portfolio-accent-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
-          <p className="mt-4 text-gray-600 dark:text-gray-400">Loading article...</p>
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-portfolio-primary-600 mx-auto"></div>
+          <p className="mt-4 text-portfolio-secondary-600">Loading article...</p>
         </div>
       </div>
     );
@@ -565,17 +565,17 @@ Start with the basics - authentication and a simple database - then gradually ex
 
   if (error || !blogContent) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+      <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-portfolio-neutral-50 via-white to-portfolio-accent-50 flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-2xl font-bold text-portfolio-neutral-800 mb-4">
             {error || 'Article not found'}
           </h2>
-          <p className="text-gray-600 dark:text-gray-400 mb-6">
+          <p className="text-portfolio-secondary-600 mb-6">
             The article you're looking for doesn't exist or has been moved.
           </p>
           <Link
             to="/blog"
-            className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
+            className="inline-flex items-center px-4 py-2 bg-portfolio-primary-600 hover:bg-portfolio-primary-700 text-white font-medium rounded-lg transition-colors"
           >
             ← Back to Blog
           </Link>
@@ -585,12 +585,12 @@ Start with the basics - authentication and a simple database - then gradually ex
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="min-h-screen py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-portfolio-neutral-50 via-white to-portfolio-accent-50">
+      <div className="max-w-4xl mx-auto">
         {/* Back to Blog Link */}
         <Link
           to="/blog"
-          className="inline-flex items-center text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 mb-8 transition-colors"
+          className="inline-flex items-center text-portfolio-primary-600 hover:text-portfolio-primary-700 mb-8 transition-colors font-medium"
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
@@ -601,19 +601,19 @@ Start with the basics - authentication and a simple database - then gradually ex
         {/* Article Header */}
         <header className="mb-8">
           <div className="flex flex-wrap items-center gap-2 mb-4">
-            <span className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm font-medium rounded-full">
+            <span className="px-3 py-1 bg-portfolio-primary-100 text-portfolio-primary-700 text-sm font-medium rounded-full">
               {blogContent.category}
             </span>
-            <span className="text-gray-500 dark:text-gray-400 text-sm">
+            <span className="text-portfolio-secondary-600 text-sm">
               {blogContent.readTime}
             </span>
           </div>
           
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
+          <h1 className="text-3xl lg:text-4xl font-bold text-portfolio-neutral-800 mb-4 leading-tight">
             {blogContent.title}
           </h1>
           
-          <div className="flex items-center text-gray-600 dark:text-gray-400 mb-6">
+          <div className="flex items-center text-portfolio-secondary-600 mb-6">
             <span>{blogContent.author}</span>
             <span className="mx-2">•</span>
             <span>{blogContent.publishedDate}</span>
@@ -623,7 +623,7 @@ Start with the basics - authentication and a simple database - then gradually ex
             {blogContent.tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded"
+                className="px-2 py-1 bg-portfolio-neutral-100 text-portfolio-secondary-600 text-xs rounded"
               >
                 {tag}
               </span>
@@ -632,43 +632,54 @@ Start with the basics - authentication and a simple database - then gradually ex
         </header>
 
         {/* Article Content */}
-        <article className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-          <div className="prose prose-lg dark:prose-invert max-w-none">
+        <article className="bg-white rounded-xl shadow-portfolio-soft p-8 lg:p-12">
+          <div className="prose prose-base max-w-none">
             <div 
+              className="text-portfolio-neutral-700 leading-relaxed"
               dangerouslySetInnerHTML={{
                 __html: blogContent.content
                   .replace(/\n/g, '<br>')
-                  .replace(/#{1}\s/g, '<h1 class="text-3xl font-bold mt-8 mb-4">')
-                  .replace(/#{2}\s/g, '<h2 class="text-2xl font-bold mt-6 mb-3">')
-                  .replace(/#{3}\s/g, '<h3 class="text-xl font-bold mt-4 mb-2">')
-                  .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                  .replace(/\*(.*?)\*/g, '<em>$1</em>')
-                  .replace(/`(.*?)`/g, '<code class="bg-gray-100 dark:bg-gray-700 px-1 py-0.5 rounded text-sm">$1</code>')
-                  .replace(/---/g, '<hr class="my-8 border-gray-300 dark:border-gray-600">')
+                  .replace(/#{1}\s/g, '<h1 class="text-2xl font-bold mt-6 mb-4 text-portfolio-neutral-800">')
+                  .replace(/#{2}\s/g, '<h2 class="text-xl font-bold mt-5 mb-3 text-portfolio-neutral-800">')
+                  .replace(/#{3}\s/g, '<h3 class="text-lg font-bold mt-4 mb-2 text-portfolio-neutral-800">')
+                  .replace(/\*\*(.*?)\*\*/g, '<strong class="text-portfolio-neutral-800 font-semibold">$1</strong>')
+                  .replace(/\*(.*?)\*/g, '<em class="text-portfolio-neutral-700 italic">$1</em>')
+                  .replace(/`(.*?)`/g, '<code class="bg-portfolio-neutral-100 text-portfolio-primary-600 px-2 py-1 rounded text-sm font-mono">$1</code>')
+                  .replace(/---/g, '<hr class="my-6 border-portfolio-neutral-200">')
               }}
             />
           </div>
         </article>
 
-        {/* Navigation */}
-        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-          <div className="flex justify-between items-center">
-            <Link
-              to="/blog"
-              className="inline-flex items-center px-6 py-3 bg-gray-100 hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 text-gray-900 dark:text-white font-medium rounded-lg transition-colors"
-            >
-              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-              </svg>
-              All Articles
-            </Link>
-            
-            <div className="text-center">
-              <p className="text-gray-600 dark:text-gray-400 text-sm">
-                Enjoyed this article? Share it with others!
+        {/* Author Section */}
+        <div className="mt-12 bg-gradient-to-r from-portfolio-primary-50 to-portfolio-secondary-50 rounded-xl p-6">
+          <div className="flex items-center space-x-4">
+            <div className="w-12 h-12 bg-portfolio-primary-600 rounded-full flex items-center justify-center">
+              <span className="text-white font-bold">HK</span>
+            </div>
+            <div>
+              <h3 className="font-bold text-portfolio-neutral-800">Hamza Khattak</h3>
+              <p className="text-portfolio-secondary-600 text-sm">
+                Full-Stack Web Developer & Content Creator
               </p>
             </div>
           </div>
+        </div>
+
+        {/* Navigation */}
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            to="/blog"
+            className="px-6 py-3 bg-portfolio-primary-600 hover:bg-portfolio-primary-700 text-white font-medium rounded-lg transition-all duration-200 text-center"
+          >
+            More Articles
+          </Link>
+          <Link
+            to="/"
+            className="px-6 py-3 bg-transparent border-2 border-portfolio-primary-600 text-portfolio-primary-600 hover:bg-portfolio-primary-50 font-medium rounded-lg transition-all text-center"
+          >
+            Back to Home
+          </Link>
         </div>
       </div>
     </div>

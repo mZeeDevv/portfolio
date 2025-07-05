@@ -2,6 +2,11 @@ import React, { useState, useEffect } from 'react';
 import gdg from '../media/gdg.png'
 import mlh from '../media/mlh.jpg'
 import mls from '../media/mls.png'
+import Event1 from '../media/Event1.jpg'
+import Event2 from '../media/Event2.jpg'
+import Event3 from '../media/Event3.jpg'
+import Event4 from '../media/Event4.jpg'
+import Event5 from '../media/Event5.jpg'
 const Events = () => {
   // Scroll to top when component mounts
   useEffect(() => {
@@ -14,65 +19,86 @@ const Events = () => {
   const events = [
     {
       id: 1,
-      name: "React Conference 2024",
-      date: "2024-03-15",
-      location: "San Francisco, CA",
+      name: "Build with AI",
+      date: "2025-04-22", // Using proper date format
+      location: "National Incubation Center, Rawalpindi",
       type: "Conference",
-      shortDescription: "Leading React conference with industry experts sharing the latest in React development.",
-      fullDescription: "Join us at React Conference 2024, the premier gathering for React developers and enthusiasts. This three-day event features keynote presentations from React core team members, hands-on workshops, and networking opportunities with fellow developers. Learn about the latest React features, best practices, and the future roadmap of React development. Topics include React 18 features, Server Components, Concurrent Rendering, and advanced patterns for building scalable applications.",
-      image: "/api/placeholder/400/250"
+      shortDescription: "Speaking at Google-sponsored event about Google Solution Challenges and AI innovations.",
+      fullDescription: "Participated as a speaker at the Build with AI conference sponsored by Google. Presented on Google Solution Challenges, showcasing real-world applications of AI technology and discussing innovative approaches to solving complex problems. The event brought together AI enthusiasts, developers, and industry professionals to explore the latest trends and advancements in artificial intelligence.",
+      image: Event1,
     },
     {
       id: 2,
-      name: "JavaScript Summit",
-      date: "2024-04-22",
-      location: "New York, NY",
-      type: "Summit",
-      shortDescription: "Premier JavaScript event covering modern frameworks, tools, and best practices.",
-      fullDescription: "JavaScript Summit brings together the brightest minds in JavaScript development for an intensive day of learning and networking. Explore cutting-edge topics including modern JavaScript frameworks, performance optimization, security best practices, and the future of web development. The summit features expert speakers from leading tech companies, interactive workshops, and panel discussions on emerging technologies like WebAssembly, Progressive Web Apps, and serverless architecture.",
-      image: "/api/placeholder/400/250"
+      name: "Code o' Clock",
+      date: "2024-10-28", // Using proper date format
+      location: "National University of Science and Technology, Islamabad",
+      type: "Workshop",
+      shortDescription: "Conducted workshop on programming fundamentals, helping students learn the basics of programming languages.",
+      fullDescription: "Led an interactive workshop at NUST focused on programming fundamentals. The session was designed to help students grasp the core concepts of programming languages and build a strong foundation for their coding journey. Topics covered included variables, control structures, functions, and basic algorithms. Participants engaged in hands-on coding exercises and received personalized guidance throughout the workshop.",
+      image: Event2,
     },
     {
       id: 3,
-      name: "AI & ML Developer Workshop",
-      date: "2024-05-10",
-      location: "Austin, TX",
+      name: "Explore AI",
+      date: "2025-02-18", // Using proper date format
+      location: "International Islamic University, Islamabad",
       type: "Workshop",
-      shortDescription: "Hands-on workshop exploring AI and Machine Learning integration in web applications.",
-      fullDescription: "Dive deep into the world of Artificial Intelligence and Machine Learning with this comprehensive workshop designed for web developers. Learn how to integrate AI/ML capabilities into your applications using popular frameworks and APIs. Topics include natural language processing, computer vision, recommendation systems, and ethical AI development. Participants will work on real-world projects and gain practical experience with TensorFlow.js, OpenAI APIs, and other cutting-edge tools.",
-      image: "/api/placeholder/400/250"
+      shortDescription: "Workshop on Microsoft Copilot, exploring AI-assisted development and productivity enhancements.",
+      fullDescription: "Conducted a comprehensive workshop on Microsoft Copilot, demonstrating how AI can enhance development workflows and boost productivity. The session covered practical applications, best practices, and advanced techniques for leveraging AI in software development. Following the event, I was contacted by the Microsoft team for feedback on the workshop and to discuss potential improvements to their AI tools. This led to an ongoing dialogue with the Microsoft team about AI-assisted development.",
+      image: Event3,
     },
     {
       id: 4,
-      name: "Full Stack Development Bootcamp",
-      date: "2024-06-05",
-      location: "Seattle, WA",
-      type: "Bootcamp",
-      shortDescription: "Intensive bootcamp covering full-stack development with modern technologies.",
-      fullDescription: "Transform your development skills with our intensive Full Stack Development Bootcamp. This comprehensive program covers both frontend and backend technologies, including React, Node.js, databases, cloud deployment, and DevOps practices. Students will build multiple real-world projects, learn industry best practices, and gain hands-on experience with modern development workflows. The bootcamp includes mentorship sessions, code reviews, and career guidance to help participants advance their development careers.",
-      image: "/api/placeholder/400/250"
+      name: "CodeBuzz",
+      date: "2025-05-23", // Using proper date format
+      location: "International Islamic University, Islamabad",
+      type: "Hackathon",
+      shortDescription: "Programming competition focused on Microsoft Copilot integration and innovative software solutions.",
+      fullDescription: "Participated in the CodeBuzz hackathon, a high-energy programming competition centered around Microsoft Copilot. The event challenged participants to create innovative software solutions by leveraging AI assistance. Teams worked intensively to develop applications that showcased the potential of AI-human collaboration in solving real-world problems. The hackathon featured multiple rounds of coding challenges, mentorship sessions, and final project presentations to a panel of industry judges.",
+      image: Event4,
     },
     {
       id: 5,
-      name: "Open Source Contribution Day",
-      date: "2024-07-18",
-      location: "Online",
-      type: "Hackathon",
-      shortDescription: "Global event focused on contributing to open source projects and building community.",
-      fullDescription: "Join developers worldwide for Open Source Contribution Day, a virtual event dedicated to giving back to the open source community. Whether you're a beginner looking to make your first contribution or an experienced developer wanting to mentor others, this event offers something for everyone. Participants will work on popular open source projects, learn about project maintenance, documentation, and community building. The event features guided sessions for first-time contributors and advanced workshops for seasoned developers.",
-      image: "/api/placeholder/400/250"
+      name: "Azure Fundamentals",
+      date: "2024-12-11", // Using proper date format
+      location: "International Islamic University, Islamabad",
+      type: "Workshop",
+      shortDescription: "Workshop on hosting static web applications with Azure, covering cloud deployment fundamentals.",
+      fullDescription: "Conducted a hands-on workshop focused on Azure Fundamentals, specifically targeting static web application hosting. Participants learned how to deploy and manage web applications using Azure's cloud infrastructure. The workshop covered essential topics including resource groups, App Service plans, deployment methods, custom domains, and performance optimization. Attendees gained practical experience by deploying their own applications during the session and received guidance on best practices for cloud architecture.",
+      image: Event5,
     },
     {
       id: 6,
-      name: "Web3 & Blockchain Summit",
-      date: "2024-08-12",
-      location: "Miami, FL",
-      type: "Summit",
-      shortDescription: "Exploring the future of web development with blockchain and decentralized technologies.",
-      fullDescription: "Step into the future of web development at the Web3 & Blockchain Summit. This cutting-edge event explores how blockchain technology is revolutionizing web applications through decentralized protocols, smart contracts, and digital assets. Learn about building DApps, integrating cryptocurrency payments, NFT marketplaces, and decentralized storage solutions. The summit features presentations from blockchain pioneers, live coding sessions, and discussions about the challenges and opportunities in the Web3 ecosystem.",
-      image: "/api/placeholder/400/250"
+      name: "HackAware",
+      date: "2025-01-15", // Approximate date
+      location: "Online (Virtual Event)",
+      type: "Webinar",
+      shortDescription: "Virtual session joined by 90+ attendees to learn about hackathons and my experience with MLH.",
+      fullDescription: "Hosted a virtual session with over 90 participants eager to learn about hackathons and my experience with Major League Hacking (MLH). Shared insights on hackathon preparation, team formation, project ideation, and effective execution within tight timeframes. Discussed my personal journey with MLH, highlighting key learnings, challenges faced, and success strategies. The webinar included a Q&A session where participants received personalized advice for their hackathon journeys.",
+      image: "https://dummyimage.com/400x250/4F46E5/ffffff&text=HackAware"
+    },
+    {
+      id: 7,
+      name: "The JavaScript Hour",
+      date: "2025-03-10", // Approximate date
+      location: "Online (Microsoft Teams)",
+      type: "Webinar",
+      shortDescription: "JavaScript session on Microsoft Teams with 100+ participants focusing on modern JS development.",
+      fullDescription: "Hosted 'The JavaScript Hour' webinar on Microsoft Teams, attracting over 100 participants interested in modern JavaScript development. The session covered ES6+ features, async programming patterns, performance optimization techniques, and framework comparison. Live coding demonstrations illustrated practical applications of advanced JavaScript concepts. The interactive format encouraged audience participation through polls, code challenges, and a lively Q&A segment where participants shared their own experiences and received expert guidance.",
+      image: "https://dummyimage.com/400x250/F59E0B/ffffff&text=JavaScript+Hour"
+    },
+    {
+      id: 8,
+      name: "Getting Started as Web Developer with VS Code",
+      date: "2025-06-05", // Approximate date
+      location: "Online (Virtual Event)",
+      type: "Webinar",
+      shortDescription: "Virtual session joined by 60+ participants learning about web development with VS Code.",
+      fullDescription: "Conducted an online workshop attended by over 60 participants eager to jumpstart their web development journey with Visual Studio Code. The session covered VS Code setup, essential extensions, productivity shortcuts, debugging tools, and integration with version control systems. Demonstrated how to create a complete web project from scratch, highlighting VS Code's features that streamline the development workflow. Participants received a resource pack including a curated list of extensions, keyboard shortcut cheat sheets, and starter project templates.",
+      image: "https://dummyimage.com/400x250/0EA5E9/ffffff&text=VS+Code+Workshop"
     }
   ];
+  
 
   const openModal = (event) => {
     setSelectedEvent(event);
@@ -95,7 +121,8 @@ const Events = () => {
       'Summit': 'bg-purple-100 text-purple-800',
       'Workshop': 'bg-green-100 text-green-800',
       'Bootcamp': 'bg-orange-100 text-orange-800',
-      'Hackathon': 'bg-red-100 text-red-800'
+      'Hackathon': 'bg-red-100 text-red-800',
+      'Webinar': 'bg-indigo-100 text-indigo-800'
     };
     return colors[type] || 'bg-gray-100 text-gray-800';
   };
@@ -283,10 +310,10 @@ const Events = () => {
         {/* Events Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-display font-bold text-portfolio-neutral-800 mb-4">
-            Upcoming Events
+            Featured Events
           </h2>
           <p className="text-lg text-portfolio-secondary-500 max-w-2xl mx-auto">
-            Tech events, conferences, and workshops that I'm attending or speaking at
+            Tech events, conferences, and workshops that I've spoken at or participated in
           </p>
         </div>
 
@@ -303,11 +330,19 @@ const Events = () => {
             >
               {/* Event Image */}
               <div className="relative overflow-hidden rounded-t-xl h-48 bg-gradient-to-br from-portfolio-primary-200 to-portfolio-secondary-200">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg className="w-16 h-16 text-portfolio-primary-600" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-                  </svg>
-                </div>
+                {event.image ? (
+                  <img 
+                    src={event.image} 
+                    alt={event.name}
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <svg className="w-16 h-16 text-portfolio-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                    </svg>
+                  </div>
+                )}
                 {/* Event Type Badge */}
                 <div className="absolute top-4 right-4">
                   <span className={`px-3 py-1 rounded-full text-xs font-semibold ${getEventTypeColor(event.type)}`}>
@@ -358,9 +393,17 @@ const Events = () => {
             {/* Modal Header */}
             <div className="relative">
               <div className="h-64 bg-gradient-to-br from-portfolio-primary-200 to-portfolio-secondary-200 rounded-t-xl flex items-center justify-center">
-                <svg className="w-24 h-24 text-portfolio-primary-600" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
-                </svg>
+                {selectedEvent.image ? (
+                  <img 
+                    src={selectedEvent.image} 
+                    alt={selectedEvent.name}
+                    className="w-full h-full object-cover rounded-t-xl"
+                  />
+                ) : (
+                  <svg className="w-24 h-24 text-portfolio-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3h-1V1h-2v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V8h14v11zM7 10h5v5H7z"/>
+                  </svg>
+                )}
               </div>
               <button
                 onClick={closeModal}
@@ -406,13 +449,7 @@ const Events = () => {
                 </p>
               </div>
 
-              <div className="mt-8 flex gap-4">
-                <button
-                  onClick={closeModal}
-                  className="px-6 py-3 bg-portfolio-primary-600 text-white rounded-lg hover:bg-portfolio-primary-700 transition-colors duration-300 font-semibold"
-                >
-                  Register Interest
-                </button>
+              <div className="mt-8 flex justify-end">
                 <button
                   onClick={closeModal}
                   className="px-6 py-3 border-2 border-portfolio-neutral-300 text-portfolio-neutral-700 rounded-lg hover:border-portfolio-primary-600 hover:text-portfolio-primary-600 transition-colors duration-300 font-semibold"

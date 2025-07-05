@@ -3,7 +3,15 @@ import React, { useState, useEffect } from 'react';
 const Contact = () => {
   // Scroll to top when component mounts
   useEffect(() => {
+    // Scroll to top when component mounts
     window.scrollTo(0, 0);
+    
+    // Check for form submission from URL parameters (Netlify redirects with ?submission=success)
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('submission') === 'success') {
+      setSubmitStatus('success');
+      setTimeout(() => setSubmitStatus(null), 5000);
+    }
   }, []);
 
   const [formData, setFormData] = useState({
@@ -27,22 +35,16 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Form will be handled by Netlify forms
-    try {
-      // The form will be processed by Netlify's form handling
+    // Let Netlify handle the form submission
+    // This function is now just for UI feedback
+    setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
       
       // Reset status after 5 seconds
       setTimeout(() => setSubmitStatus(null), 5000);
-    } catch (error) {
-      setIsSubmitting(false);
-      setSubmitStatus('error');
-      
-      // Reset error status after 5 seconds
-      setTimeout(() => setSubmitStatus(null), 5000);
-    }
+    }, 1000);
   };
 
   const contactMethods = [
@@ -127,12 +129,13 @@ const Contact = () => {
             )}
             
             <form 
-              onSubmit={handleSubmit} 
-              className="space-y-6"
               name="contact"
-              method="POST"
+              method="POST" 
               data-netlify="true"
               netlify-honeypot="bot-field"
+              action="/?submission=success"
+              onSubmit={handleSubmit} 
+              className="space-y-6"
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="hidden">

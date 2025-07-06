@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const Blog = () => {
+  useEffect(() => {
+    // Scroll to top when component mounts
+    window.scrollTo(0, 0);
+  }, []);
   // Blog posts data - Long-form articles
   const blogPosts = [
     {
@@ -67,6 +71,17 @@ const Blog = () => {
       readTime: '6 minute read',
       tags: ['Personal Journey', 'Career', 'Gaming', 'Programming', 'Story'],
       category: 'Career',
+      image: '/api/placeholder/400/250',
+      type: 'blog'
+    },
+    {
+      id: 'adding-firebase-to-javascript-project',
+      title: 'Adding Firebase to JavaScript Project',
+      excerpt: 'Firebase is Google\'s comprehensive platform for building web and mobile applications. Learn how to integrate Firebase into a JavaScript project from scratch.',
+      publishedDate: 'December 9, 2023',
+      readTime: '8 minute read',
+      tags: ['Firebase', 'JavaScript', 'Web Development', 'Tutorial'],
+      category: 'Tutorial',
       image: '/api/placeholder/400/250',
       type: 'blog'
     }

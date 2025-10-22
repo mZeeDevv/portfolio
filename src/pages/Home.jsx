@@ -66,7 +66,7 @@ export default function Home() {
                   I'm <span className="text-portfolio-primary-600">Hamza Khattak</span>
                 </h1>
                 <p className="text-xl text-portfolio-secondary-500 mb-8 leading-relaxed">
-                  Full-Stack Web Developer & Content Creator
+                  Full-Stack Developer, Microsoft Most Valuable Professional & Content Creator
                 </p>
                 
                 {/* Highlights/Roles */}
@@ -131,33 +131,32 @@ export default function Home() {
 
               <div className="prose prose-lg max-w-none mb-8">
                 <p className="text-portfolio-neutral-600 leading-relaxed mb-6">
-                  As a <span className="font-semibold text-portfolio-primary-600">full-stack web developer</span> with a strong passion for JavaScript and its frameworks, I've worked on both national and international projects across different countries. My expertise in web technologies allows me to build responsive, interactive, and user-friendly applications that solve real-world problems.
+                  As a <span className="font-semibold text-portfolio-primary-600">full-stack developer</span> with over <span className="font-semibold text-portfolio-primary-600">3+ years of experience</span> and a passion for Java and JavaScript frameworks, I've worked on national and international projects. Due to my exceptional expertise in Microsoft products, I'm proud to be the <span className="font-semibold text-portfolio-primary-600">youngest MVP across the globe</span>.
                 </p>
                 
                 <p className="text-portfolio-neutral-600 leading-relaxed mb-6">
-                  Beyond coding, I'm deeply involved in tech communities. I'm currently leading the city-wise largest Microsoft chapter called <span className="font-semibold text-portfolio-primary-600">Microsoft Learn Student Ambassadors - Islamabad</span>. I started as a Tech Team Lead for <span className="font-semibold text-portfolio-primary-600">Google Developer Student Club - IIUI</span> and was later promoted to <span className="font-semibold text-portfolio-primary-600">Community Lead by Google</span> for the 2024-25 tenure.
+                  I'm currently leading <span className="font-semibold text-portfolio-primary-600">Microsoft Student Ambassadors - Islamabad</span> and served as <span className="font-semibold text-portfolio-primary-600">Community Lead by Google</span> for <span className="font-semibold text-portfolio-primary-600">Google Developer Groups on Campus - IIUI</span> during 2024-25.
                 </p>
                 
                 <p className="text-portfolio-neutral-600 leading-relaxed mb-6">
-                  I enjoy sharing knowledge and building connections within the tech community, helping others grow and discover their potential in the exciting world of technology.
-                  When I'm not coding or leading communities, you might find me playing with cats, I absolutely love them!
+                  What sets me apart is being a <span className="font-semibold text-portfolio-primary-600">very quick learner</span> who rapidly adopts new technologies. I enjoy sharing knowledge within tech communities and helping others discover their potential. When I'm not coding, you might find me playing with cats!
                 </p>
               </div>
 
               {/* CTA Section */}
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <a
-                  href="#projects"
+                <Link
+                  to="/projects"
                   className="px-8 py-3 bg-portfolio-primary-600 hover:bg-portfolio-primary-700 text-white font-medium rounded-lg transition-all duration-200 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 text-center"
                 >
                   View My Work
-                </a>
-                <a
-                  href="#contact"
+                </Link>
+                <Link
+                  to="/contact"
                   className="px-8 py-3 bg-transparent border-2 border-portfolio-primary-600 text-portfolio-primary-600 hover:bg-portfolio-primary-50 font-medium rounded-lg transition-all text-center"
                 >
                   Get In Touch
-                </a>
+                </Link>
               </div>
 
               {/* Story Link */}
@@ -173,15 +172,15 @@ export default function Home() {
                     <p className="text-portfolio-secondary-600 mb-3">
                       Read how I started my technical journey from a game
                     </p>
-                    <a
-                      href="#content"
+                    <Link
+                      to="/blog/from-gamer-to-full-stack-developer"
                       className="inline-flex items-center text-portfolio-primary-600 font-medium hover:text-portfolio-primary-700 transition-colors"
                     >
                       Read My Story
                       <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
